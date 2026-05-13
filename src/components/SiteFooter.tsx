@@ -7,9 +7,9 @@ export function SiteFooter() {
     <footer className="mt-32 border-t border-border bg-[var(--gradient-soft)]">
       <div className="mx-auto max-w-7xl px-5 lg:px-8 py-16 grid gap-12 md:grid-cols-4">
         <div className="md:col-span-2">
-          <div className="flex items-center gap-3">
-            <img src={logo} alt="" width={48} height={48} className="h-12 w-12 object-contain" />
-            <div className="font-display font-bold text-lg">Suyusan Solutions Inc.</div>
+          <div className="flex items-center gap-4">
+            <img src={logo} alt="" width={88} height={88} className="h-20 w-auto object-contain" />
+            <div className="font-display font-bold text-xl text-brand-green-deep">Suyusan Solutions Inc.</div>
           </div>
           <p className="mt-4 text-sm text-muted-foreground max-w-md">
             Professional residential and commercial cleaning services across Canada.

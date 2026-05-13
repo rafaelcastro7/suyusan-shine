@@ -14,12 +14,12 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
-      <div className="mx-auto max-w-7xl px-5 lg:px-8 h-20 flex items-center justify-between">
+      <div className="mx-auto max-w-7xl px-5 lg:px-8 h-24 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <img src={logo} alt="Suyusan Solutions" width={48} height={48} className="h-12 w-12 object-contain" />
-          <div className="leading-tight hidden sm:block">
-            <div className="font-display font-bold text-foreground tracking-tight">Suyusan</div>
-            <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Solutions Inc.</div>
+          <img src={logo} alt="Suyusan Solutions" width={80} height={80} className="h-16 md:h-20 w-auto object-contain" />
+          <div className="leading-tight hidden sm:block font-display font-bold tracking-tight text-brand-green-deep">
+            <div className="text-lg">Suyusan</div>
+            <div className="text-[11px] uppercase tracking-[0.22em]">Solutions Inc.</div>
           </div>
         </Link>
 
