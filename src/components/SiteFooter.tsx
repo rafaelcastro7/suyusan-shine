@@ -31,7 +31,7 @@ export function SiteFooter() {
           <div className="font-semibold mb-4">Contact</div>
           <ul className="space-y-3 text-sm text-muted-foreground">
             <li className="flex gap-2"><Phone className="h-4 w-4 mt-0.5 text-primary" /> (416) 555-0123</li>
-            <li className="flex gap-2"><Mail className="h-4 w-4 mt-0.5 text-primary" /> info@suyusansolutions.ca</li>
+            <li className="flex gap-2"><Mail className="h-4 w-4 mt-0.5 text-primary" /><span>info@suyusansolutions.ca</span></li>
             <li className="flex gap-2"><MapPin className="h-4 w-4 mt-0.5 text-primary" /> Greater Toronto Area, ON</li>
           </ul>
         </div>
