@@ -8,6 +8,7 @@ import { StatCounter } from "@/components/StatCounter";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import team from "@/assets/team.jpg";
 import office from "@/assets/office.jpg";
+import cleanOffice from "@/assets/clean-office.jpg";
 
 export const Route = createFileRoute("/about")({
   component: AboutPage,
