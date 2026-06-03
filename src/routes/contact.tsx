@@ -64,7 +64,8 @@ function ContactPage() {
     <div className="min-h-screen flex flex-col">
       <SiteHeader />
 
-      <section className="bg-[var(--gradient-soft)] border-b border-border">
+      <section className="relative overflow-hidden border-b border-border">
+        <div className="gradient-mesh" />
         <div className="mx-auto max-w-7xl px-5 lg:px-8 py-20 lg:py-28">
           <FadeIn variant="fade-up">
             <div className="text-xs uppercase tracking-[0.2em] text-primary font-semibold">{t("contact.kicker")}</div>
