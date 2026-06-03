@@ -1,0 +1,16 @@
+# Suyusan Solutions Inc.
+
+> Professional residential, commercial and retirement-home cleaning services across the GTA. Insured, bonded and eco-friendly — book online in 60 seconds.
+
+Suyusan Solutions Inc. is a Canadian cleaning company built on care, consistency and trust. We deliver dependable, detail-obsessed cleaning for homes, offices and retirement residences. From recurring home upkeep to commercial contracts and overnight retirement-home shifts, our promise is the same — show up, do it right, and leave it better than we found it. All crews are background-checked, trained and equipped with low-VOC, biodegradable products safe for kids, pets and seniors.
+
+## Pages
+
+- [Home](/): Overview of services, how it works, pricing preview, client testimonials and gallery.
+- [About](/about): Company story, values, stats and the team behind Suyusan Solutions.
+- [Services](/services): Full service catalog — regular cleaning, deep cleaning, move-in/move-out, post-construction, commercial contracts, retirement-home housekeeping and more.
+- [Pricing](/pricing): Transparent, upfront rates with no hidden fees. See what you'll pay before you book.
+- [Gallery](/gallery): Before-and-after photos showcasing our cleaning work across homes and commercial spaces.
+- [FAQ](/faq): Answers to common questions about booking, scheduling, products, satisfaction guarantee and service areas.
+- [Contact](/contact): Get in touch for inquiries, custom quotes or partnership opportunities.
+- [Book Now](/booking): Online booking form — pick your service, size and schedule in under 60 seconds with an instant quote.
