@@ -20,6 +20,9 @@ export const Route = createFileRoute("/")({
       { title: "Suyusan Solutions Inc. — Professional Cleaning in Canada" },
       { name: "description", content: "Residential and commercial cleaning services across the GTA — regular, deep, post-construction, senior care and retirement-home housekeeping. Book online in 60 seconds." },
     ],
+    links: [
+      { rel: "preload", as: "image", href: hero, fetchpriority: "high" },
+    ],
   }),
 });
 
@@ -65,7 +68,7 @@ function Home() {
           </div>
           <FadeIn variant="fade-left" className="relative">
             <div className="absolute -inset-6 bg-[var(--gradient-brand)] opacity-20 rounded-[2rem] blur-2xl" />
-            <img src={hero} alt="Spotless modern living room cleaned by a Suyusan Solutions professional" width={1600} height={1000} className="relative rounded-[var(--radius-bento)] shadow-[var(--shadow-soft)] object-cover aspect-[4/3] w-full" />
+            <img src={hero} alt="Spotless modern living room cleaned by a Suyusan Solutions professional" width={1600} height={1000} fetchPriority="high" loading="eager" className="relative rounded-[var(--radius-bento)] shadow-[var(--shadow-soft)] object-cover aspect-[4/3] w-full" />
             <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-2xl p-4 shadow-[var(--shadow-soft)] hidden md:flex items-center gap-3">
               <div className="h-10 w-10 rounded-full bg-brand-green/30 grid place-items-center"><Leaf className="h-5 w-5 text-primary" /></div>
               <div>
