@@ -123,16 +123,16 @@ function ServicesPage() {
                         </Link>
                       </div>
 
-                      {i < 6 && (
-                        <div className="hidden lg:block">
-                          <img
-                            src={`/Galeria/${String(i + 1).padStart(2, '0')}.jpeg`}
-                            alt={title}
-                            loading="lazy"
-                            className="rounded-2xl border border-border aspect-[4/5] object-cover"
-                          />
-                        </div>
-                      )}
+                      <div className="hidden lg:block">
+                        <img
+                          src={serviceImages[slug]}
+                          alt={title}
+                          width={800}
+                          height={1000}
+                          loading="lazy"
+                          className="rounded-2xl border border-border aspect-[4/5] object-cover w-full"
+                        />
+                      </div>
                     </div>
                   </div>
                 </article>
