@@ -1,0 +1,517 @@
+{
+  "language": { "label": "Langue" },
+  "nav": {
+    "services": "Services",
+    "pricing": "Tarifs",
+    "gallery": "Galerie",
+    "about": "À propos",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "bookCta": "Réserver en 60s",
+    "menu": "Menu"
+  },
+  "footer": {
+    "tagline": "Services professionnels de nettoyage résidentiel et commercial dans la région du Grand Toronto. Assurés, cautionnés et engagés pour un espace impeccable et plus sain.",
+    "explore": "Explorer",
+    "getStarted": "Commencer",
+    "requestQuote": "Demander un devis",
+    "contact": "Contact",
+    "serviceAreas": "Zones desservies",
+    "rights": "Tous droits réservés.",
+    "insured": "Assurés et cautionnés · Au service de la RGT"
+  },
+  "common": {
+    "from": "à partir de",
+    "back": "Retour",
+    "continue": "Continuer",
+    "bookIn60s": "Réserver en 60s",
+    "seePricing": "Voir les tarifs",
+    "requestQuote": "Demander un devis",
+    "bookNow": "Réserver",
+    "close": "Fermer",
+    "prev": "Précédent",
+    "next": "Suivant"
+  },
+  "meta": {
+    "home": {
+      "title": "Suyusan Solutions — Nettoyage dans la RGT",
+      "description": "Nettoyage résidentiel et commercial assuré dans toute la RGT — régulier, en profondeur, post-construction et résidences pour aînés. Réservez en 60 secondes.",
+      "ogTitle": "Suyusan Solutions — Nettoyage dans la RGT",
+      "ogDescription": "Nettoyage résidentiel et commercial assuré dans la RGT. Réservez en ligne en 60 secondes."
+    },
+    "about": {
+      "title": "À propos — Suyusan Solutions Inc.",
+      "description": "Découvrez Suyusan Solutions — une entreprise de nettoyage de la RGT bâtie sur le soin, la constance et des équipes vérifiées.",
+      "ogTitle": "À propos de Suyusan Solutions Inc.",
+      "ogDescription": "Une entreprise de nettoyage de la RGT bâtie sur le soin et la constance."
+    },
+    "services": {
+      "title": "Services de nettoyage — Suyusan Solutions",
+      "description": "Nettoyage régulier, en profondeur, post-construction, pour aînés, commercial, emménagement/déménagement et résidences pour personnes âgées dans la RGT.",
+      "ogTitle": "Services de nettoyage — Suyusan Solutions",
+      "ogDescription": "Nettoyage résidentiel, commercial et spécialisé dans la RGT."
+    },
+    "pricing": {
+      "title": "Tarifs — Suyusan Solutions",
+      "description": "Tarifs de nettoyage transparents. Prix de départ pour le nettoyage résidentiel, en profondeur et devis commerciaux personnalisés dans la RGT.",
+      "ogTitle": "Tarifs — Suyusan Solutions",
+      "ogDescription": "Tarifs de départ transparents pour le nettoyage résidentiel et commercial dans la RGT."
+    },
+    "gallery": {
+      "title": "Galerie — Suyusan Solutions",
+      "description": "Photos de notre travail de nettoyage dans des maisons, bureaux et résidences pour aînés de la RGT.",
+      "ogTitle": "Galerie — Suyusan Solutions",
+      "ogDescription": "Photos de notre travail résidentiel, commercial et en résidence pour aînés."
+    },
+    "faq": {
+      "title": "FAQ — Suyusan Solutions",
+      "description": "Réponses sur l'assurance, les produits, l'horaire, les tarifs, les animaux et notre zone desservie dans la RGT.",
+      "ogTitle": "FAQ — Suyusan Solutions",
+      "ogDescription": "Réponses aux questions fréquentes sur nos services de nettoyage dans la RGT."
+    },
+    "contact": {
+      "title": "Contact — Suyusan Solutions",
+      "description": "Obtenez un devis gratuit pour votre maison, bureau ou résidence pour aînés. Joignez notre équipe par téléphone, courriel ou formulaire.",
+      "ogTitle": "Contacter Suyusan Solutions",
+      "ogDescription": "Obtenez un devis gratuit de nettoyage par téléphone, courriel ou formulaire."
+    },
+    "booking": {
+      "title": "Réserver en ligne — Suyusan Solutions",
+      "description": "Réservez votre nettoyage en moins de 60 secondes. Choisissez le service, la taille et l'horaire et obtenez un devis instantané.",
+      "ogTitle": "Réserver en ligne — Suyusan Solutions",
+      "ogDescription": "Réservez votre nettoyage en 60 secondes et obtenez un devis instantané."
+    }
+  },
+  "home": {
+    "heroBadge": "Réservations ouvertes dans toute la RGT",
+    "heroLine1": "Un espace impeccable.",
+    "heroLine2": "Un esprit plus clair.",
+    "heroLead": "Suyusan Solutions Inc. offre un nettoyage fiable et minutieux pour les maisons, bureaux et résidences pour aînés. Assurés, cautionnés et formés — réservez en ligne en 60 secondes.",
+    "stats": {
+      "homes": "Maisons nettoyées",
+      "rating": "Note client",
+      "satisfaction": "Satisfaction"
+    },
+    "ecoBadge": "Produits écologiques",
+    "ecoBadgeText": "Sécuritaires pour enfants et animaux",
+    "trust": {
+      "insured": "Assurés et cautionnés",
+      "insuredText": "Couverture responsabilité complète",
+      "trained": "Équipes formées",
+      "trainedText": "Personnel vérifié",
+      "eco": "Produits écologiques",
+      "ecoText": "Faible COV, sécurité familiale",
+      "ontime": "Service ponctuel",
+      "ontimeText": "Horaires fiables"
+    },
+    "bento": {
+      "kicker": "Ce que nous faisons",
+      "title": "Des services de nettoyage pour chaque espace",
+      "lead": "De l'entretien régulier à domicile aux contrats commerciaux et aux quarts de nuit en résidence pour aînés — une seule équipe, une seule norme.",
+      "viewAll": "Voir tous les services",
+      "featureTitle": "Nettoyage en profondeur complet",
+      "featureText": "Une remise à neuf complète qui atteint tout ce que l'entretien régulier ne fait pas.",
+      "exploreDeep": "Explorer le nettoyage en profondeur",
+      "ctaTitle": "Vous ne savez pas ce qu'il vous faut ?",
+      "ctaText": "Obtenez un devis gratuit en moins d'une minute."
+    },
+    "how": {
+      "kicker": "Comment ça marche",
+      "title": "Le nettoyage en trois étapes simples",
+      "step1Title": "Réservez en ligne",
+      "step1Text": "Choisissez votre service, la taille et l'horaire en moins de 60 secondes — obtenez un devis instantané.",
+      "step2Title": "Nous nettoyons",
+      "step2Text": "Votre équipe vérifiée arrive à l'heure avec des produits écologiques.",
+      "step3Title": "Vous vous détendez",
+      "step3Text": "Rentrez dans un espace impeccable — soutenu par notre garantie de satisfaction à 100 %."
+    },
+    "pricingPreview": {
+      "kicker": "Tarifs transparents",
+      "title": "Des tarifs simples et clairs",
+      "lead": "Aucun frais caché, aucune surprise. Voyez ce que vous paierez avant de réserver."
+    },
+    "testimonials": {
+      "kicker": "La confiance de centaines de clients",
+      "title": "Ce que disent nos clients"
+    },
+    "gallery": {
+      "kicker": "Notre travail",
+      "title": "Voyez la transformation",
+      "viewAll": "Voir toutes les photos"
+    },
+    "faqPreview": {
+      "kicker": "Questions",
+      "title": "Questions fréquentes",
+      "viewAll": "Voir toute la FAQ"
+    },
+    "cta": {
+      "title": "Prêt pour un espace plus propre ?",
+      "text": "Réservez en ligne en moins d'une minute, ou parlez-nous de votre établissement et nous vous enverrons un devis gratuit dans un jour ouvrable.",
+      "call": "Appeler (416) 555-0123"
+    }
+  },
+  "about": {
+    "kicker": "À propos",
+    "title": "Le nettoyage, avec du soin dans chaque détail.",
+    "lead": "Suyusan Solutions Inc. est une entreprise canadienne de nettoyage fondée sur une idée simple : un espace propre change la façon dont vous vous y sentez. D'une seule maison à une résidence de 200 suites, notre promesse est la même — se présenter, bien faire et laisser l'endroit mieux que nous l'avons trouvé.",
+    "stats": {
+      "homes": "Maisons et bureaux nettoyés",
+      "rating": "Note moyenne des clients",
+      "regions": "Régions desservies dans la RGT",
+      "satisfaction": "Garantie de satisfaction"
+    },
+    "values": {
+      "care": { "title": "Soin", "text": "Nous traitons chaque espace — et les personnes qui s'y trouvent — comme notre propre famille." },
+      "standards": { "title": "Normes", "text": "Listes documentées, équipes supervisées et garantie de satisfaction à 100 %." },
+      "people": { "title": "Humain d'abord", "text": "Salaires équitables, formation et respect pour chaque membre de l'équipe." },
+      "sustainability": { "title": "Durabilité", "text": "Produits biodégradables à faible COV qui protègent votre maison et notre planète." }
+    },
+    "why": {
+      "kicker": "Pourquoi Suyusan",
+      "title": "Conçus pour les maisons, à l'échelle des établissements.",
+      "text": "Nous avons commencé avec des clients résidentiels et avons grandi vers les contrats commerciaux et les résidences pour aînés parce que nos clients nous le demandaient. C'est la même attention résidentielle aux détails que nous apportons à chaque espace commercial.",
+      "cta": "Travailler avec nous"
+    }
+  },
+  "services": {
+    "kicker": "Services",
+    "title": "Des solutions de nettoyage pour chaque type d'espace",
+    "lead": "Une équipe de confiance, une norme constante — d'une visite résidentielle récurrente aux quarts multiples en résidence pour aînés.",
+    "categories": {
+      "all": "Tous les services",
+      "residential": "Résidentiel",
+      "commercial": "Commercial",
+      "specialty": "Spécialisé"
+    },
+    "serviceLabel": "Service",
+    "requestService": "Demander ce service",
+    "cta": {
+      "title": "Trouvé le bon service ?",
+      "text": "Réservez en ligne en 60 secondes avec un devis instantané, ou consultez d'abord nos tarifs transparents."
+    },
+    "items": {
+      "regular-cleaning": {
+        "title": "Nettoyage régulier",
+        "short": "Entretien hebdomadaire, aux deux semaines ou mensuel pour garder votre maison toujours fraîche.",
+        "description": "Notre service de nettoyage récurrent est conçu pour maintenir une maison saine, ordonnée et accueillante avec des visites prévisibles et une équipe de confiance. Chaque visite suit une liste détaillée couvrant l'époussetage, l'aspirateur, le lavage, la cuisine et la salle de bain.",
+        "bullets": [
+          "Époussetage des surfaces accessibles, plinthes et décor",
+          "Comptoirs de cuisine, évier, cuisinière et extérieur des appareils",
+          "Salles de bain : baignoires, douches, toilettes, miroirs et accessoires",
+          "Aspirateur et lavage des planchers ; ordures et recyclage sortis"
+        ]
+      },
+      "deep-cleaning": {
+        "title": "Nettoyage en profondeur / saisonnier",
+        "short": "Une remise à neuf complète pour le printemps, l'automne ou quand votre maison en a le plus besoin.",
+        "description": "Un nettoyage en profondeur méticuleux pièce par pièce qui s'attaque à tout ce que le service régulier ne fait pas. Idéal pour le ménage du printemps, la préparation des fêtes ou la remise à neuf d'une maison.",
+        "bullets": [
+          "Intérieur des fenêtres, rails, rebords et stores",
+          "Brossage détaillé du coulis, des carreaux et des accumulations",
+          "Luminaires, ventilateurs, conduits et cadres de portes",
+          "Essuyage manuel des extérieurs d'armoires et surfaces fréquentes"
+        ]
+      },
+      "post-construction": {
+        "title": "Post-rénovation et post-construction",
+        "short": "Enlèvement de la poussière, des débris et des résidus pour un espace rénové prêt à emménager.",
+        "description": "La construction crée une poussière fine qui se dépose partout. Nos équipes effectuent un nettoyage en plusieurs étapes — brut, final et retouches — avec aspirateurs HEPA et les bons produits.",
+        "bullets": [
+          "Aspirateur HEPA des planchers, murs, conduits et accessoires",
+          "Enlèvement des éclaboussures de peinture, adhésifs et autocollants",
+          "Polissage du verre, miroirs, acier inoxydable et chrome",
+          "Passe finale avant la visite client"
+        ]
+      },
+      "senior-cleaning": {
+        "title": "Nettoyage pour aînés",
+        "short": "Un nettoyage attentionné et fiable adapté aux besoins des aînés.",
+        "description": "Un service respectueux et peu perturbant conçu pour les aînés vieillissant à domicile. Notre équipe formée est patiente, communique clairement et utilise des produits doux.",
+        "bullets": [
+          "Réduction des risques de chute (tapis, fils, désordre)",
+          "Désinfection des barres d'appui, aides à la mobilité et zones fréquentes",
+          "Lessive et changement de literie disponibles",
+          "Même équipe à chaque visite — des visages familiers"
+        ]
+      },
+      "appliances": {
+        "title": "Nettoyage incluant les appareils",
+        "short": "Service additionnel pour le four, le frigo, le micro-ondes et la lessive.",
+        "description": "Un service additionnel ou autonome pour les appareils qui nécessitent du temps et des produits. Nous dégraissons, détartrons et désinfectons les surfaces que vous utilisez tous les jours.",
+        "bullets": [
+          "Intérieur du four, grilles et hotte",
+          "Intérieur du réfrigérateur et congélateur (aliments déplacés temporairement)",
+          "Micro-ondes, lave-vaisselle et petits appareils",
+          "Tambour du lave-linge et sèche-linge, joint et système de peluche"
+        ]
+      },
+      "staging": {
+        "title": "Nettoyage de mise en valeur",
+        "short": "Un détail parfait pour soutenir votre mise en valeur immobilière.",
+        "description": "Un nettoyage axé sur le détail coordonné avec les stylistes, photographes et agents immobiliers. Les acheteurs remarquent tout — nous nous assurons qu'ils ne remarquent que les bonnes choses.",
+        "bullets": [
+          "Verre, miroirs et inox sans traces",
+          "Retouches entre les visites sur demande",
+          "Horaire coordonné avec votre styliste",
+          "Présence discrète sur place"
+        ]
+      },
+      "commercial-office": {
+        "title": "Nettoyage commercial et de bureau",
+        "short": "Nettoyage de bureau après les heures pour garder votre équipe en santé.",
+        "description": "Programmes de conciergerie personnalisables pour bureaux, cliniques, studios et commerces. Nous travaillons selon vos heures, suivons des listes documentées et offrons un point de contact unique.",
+        "bullets": [
+          "Postes de travail, salles de réunion, cuisines et toilettes",
+          "Réapprovisionnement du papier, savon et fournitures",
+          "Entretien des planchers : aspirateur, lavage, polissage et cycles en profondeur",
+          "Horaires de jour, de soir ou de fin de semaine"
+        ]
+      },
+      "move-in-out": {
+        "title": "Nettoyage emménagement / déménagement",
+        "short": "Une remise impeccable pour locataires, propriétaires et gestionnaires immobiliers.",
+        "description": "Nous préparons la propriété pour le prochain chapitre. Conçu pour répondre aux exigences de location et de vente, notre forfait est complet et documenté.",
+        "bullets": [
+          "Intérieur des armoires, tiroirs, garde-robes et garde-mangers",
+          "Nettoyage détaillé de l'intérieur des appareils",
+          "Murs nettoyés ponctuellement, plinthes et moulures essuyées",
+          "Finition prête pour l'inspection finale"
+        ]
+      },
+      "retirement-housekeeping": {
+        "title": "Conciergerie en résidence pour aînés",
+        "short": "Soutien de conciergerie de jour et de nuit pour les résidences pour aînés.",
+        "description": "Conciergerie contractuelle fiable pour les communautés de retraités. Notre personnel est formé sur les bases du contrôle des infections, la communication centrée sur le résident et le rythme opérationnel des soins de longue durée.",
+        "bullets": [
+          "Suites des résidents, salles communes et salles à manger",
+          "Couverture de jour et de nuit disponible",
+          "EPI, feuilles de suivi et rapports de superviseur",
+          "Équipe vérifiée et uniformée"
+        ]
+      }
+    }
+  },
+  "pricing": {
+    "kicker": "Tarifs",
+    "title": "Tarification simple et transparente",
+    "lead": "Aucun frais caché. Voyez votre tarif de départ, puis réservez en ligne en 60 secondes avec un devis instantané.",
+    "footnote": "Le prix final dépend de la taille de la maison et de la fréquence. Le service récurrent offre jusqu'à 20 % d'économies.",
+    "getExact": "Obtenir votre devis exact →",
+    "faqTitle": "Questions sur les tarifs",
+    "mostPopular": "Le plus populaire",
+    "customQuote": "Devis personnalisé",
+    "cta": { "title": "Prêt à réserver ?", "text": "Obtenez votre devis personnalisé en moins d'une minute." },
+    "tiers": {
+      "home": {
+        "name": "Nettoyage résidentiel",
+        "tagline": "Entretien récurrent pour maisons et condos",
+        "unit": "par visite",
+        "features": [
+          "Hebdomadaire, aux deux semaines ou mensuel",
+          "Même équipe de confiance à chaque visite",
+          "Cuisine, salles de bain, planchers et époussetage",
+          "Produits écologiques inclus",
+          "Garantie de satisfaction à 100 %"
+        ]
+      },
+      "deep": {
+        "name": "Nettoyage en profondeur",
+        "tagline": "Remise à neuf saisonnière complète",
+        "unit": "par nettoyage",
+        "features": [
+          "Tout ce qui est inclus dans le nettoyage résidentiel",
+          "Intérieur des fenêtres, rails et stores",
+          "Brossage du coulis, des carreaux et accumulations",
+          "Luminaires, conduits et cadres de portes",
+          "Extérieurs d'armoires essuyés à la main"
+        ]
+      },
+      "commercial": {
+        "name": "Commercial",
+        "tagline": "Bureaux, cliniques et résidences pour aînés",
+        "unit": "devis personnalisé",
+        "features": [
+          "Programmes de conciergerie personnalisés",
+          "Horaires de jour, de soir ou de fin de semaine",
+          "Assurés, cautionnés et vérifiés",
+          "Point de contact unique",
+          "Réapprovisionnement de fournitures disponible"
+        ]
+      }
+    },
+    "sizes": {
+      "studio": "Studio / 1 chambre",
+      "2bed": "2 chambres",
+      "3bed": "3 chambres",
+      "4bed": "4 chambres",
+      "5plus": "5+ chambres"
+    },
+    "frequencies": {
+      "once": "Une seule fois",
+      "monthly": "Mensuel",
+      "biweekly": "Aux deux semaines",
+      "weekly": "Hebdomadaire",
+      "save": "Économisez {{percent}} %"
+    }
+  },
+  "gallery": {
+    "kicker": "Galerie",
+    "title": "Notre travail parle de lui-même",
+    "lead": "Des cuisines étincelantes aux bureaux impeccables, voici un aperçu de la transformation que nous apportons à chaque projet.",
+    "imageAlt": "Service de nettoyage professionnel {{n}}"
+  },
+  "faq": {
+    "kicker": "Centre d'aide",
+    "title": "Questions fréquentes",
+    "lead": "Tout ce que vous devez savoir sur Suyusan. Vous ne trouvez pas votre réponse ? Contactez-nous.",
+    "stillTitle": "D'autres questions ?",
+    "stillText": "Notre équipe se fera un plaisir de vous aider à trouver le bon service.",
+    "contactUs": "Nous contacter",
+    "items": {
+      "insured": {
+        "q": "Êtes-vous assurés et cautionnés ?",
+        "a": "Oui. Suyusan Solutions Inc. détient une assurance responsabilité complète et est cautionnée. Chaque nettoyeur est vérifié et formé avant d'entrer dans votre espace."
+      },
+      "supplies": {
+        "q": "Dois-je fournir les produits ou l'équipement ?",
+        "a": "Non. Nous arrivons entièrement équipés avec des outils professionnels et des produits écologiques à faible COV, sécuritaires pour enfants et animaux. Si vous préférez vos propres produits, dites-le-nous."
+      },
+      "sameCleaner": {
+        "q": "Aurai-je le même nettoyeur à chaque fois ?",
+        "a": "Lorsque possible, oui. Nous attribuons la même équipe à vos visites récurrentes afin qu'elle apprenne vos préférences."
+      },
+      "guarantee": {
+        "q": "Quelle est votre garantie de satisfaction ?",
+        "a": "Si vous n'êtes pas satisfait d'une zone nettoyée, faites-le-nous savoir dans les 24 heures et nous reviendrons sans frais. Satisfaction garantie à 100 %."
+      },
+      "pay": {
+        "q": "Comment puis-je payer ?",
+        "a": "Nous acceptons les cartes de crédit, les virements électroniques et la facturation pour les comptes commerciaux. Le paiement est perçu après chaque visite — pas de dépôt initial pour le résidentiel."
+      },
+      "cancellation": {
+        "q": "Quelle est votre politique d'annulation ?",
+        "a": "Vous pouvez reprogrammer ou annuler jusqu'à 24 heures avant votre rendez-vous sans frais. Les annulations à moins de 24 heures peuvent entraîner des frais."
+      },
+      "pets": {
+        "q": "Nettoyez-vous si j'ai des animaux ?",
+        "a": "Absolument. Nos produits sont sécuritaires pour les animaux et nos équipes sont à l'aise avec eux. Indiquez-le-nous lors de la réservation."
+      },
+      "areas": {
+        "q": "Quelles zones desservez-vous ?",
+        "a": "Nous desservons la région du Grand Toronto et les environs, incluant Toronto, Mississauga, Oakville, Vaughan, Markham, Richmond Hill et Brampton. Vous n'êtes pas sûr ? Demandez-nous."
+      },
+      "home": {
+        "q": "Dois-je être à la maison pendant le nettoyage ?",
+        "a": "Pas du tout. Beaucoup de clients fournissent une clé ou un code. Nos équipes cautionnées et vérifiées sont de confiance dans des centaines de maisons et d'entreprises."
+      },
+      "advance": {
+        "q": "Combien de temps à l'avance dois-je réserver ?",
+        "a": "Pour le service récurrent, quelques jours suffisent. Pour les nettoyages en profondeur et les emménagements/déménagements, 3 à 5 jours d'avis aident. Besoin plus rapide ? Nous ferons de notre mieux."
+      }
+    }
+  },
+  "contact": {
+    "kicker": "Contact",
+    "title": "Rendons votre espace étincelant.",
+    "lead": "Parlez-nous de vos besoins et nous vous répondrons avec un devis gratuit dans un jour ouvrable.",
+    "getInTouch": "Nous joindre",
+    "serviceArea": "Zone desservie",
+    "form": {
+      "name": "Nom complet",
+      "namePlaceholder": "Votre nom",
+      "email": "Courriel",
+      "emailPlaceholder": "vous@courriel.com",
+      "phone": "Téléphone",
+      "phonePlaceholder": "(416) 555-0123",
+      "service": "Service",
+      "selectService": "Choisir un service…",
+      "message": "Message",
+      "messagePlaceholder": "Parlez-nous de votre espace, de la superficie et de l'horaire souhaité…",
+      "send": "Envoyer la demande",
+      "thanksTitle": "Merci !",
+      "thanksText": "Nous avons reçu votre demande et vous contacterons dans un jour ouvrable."
+    },
+    "errors": {
+      "nameRequired": "Le nom est requis",
+      "emailValid": "Courriel valide requis",
+      "serviceRequired": "Veuillez choisir un service",
+      "messageMin": "Le message doit contenir au moins 10 caractères"
+    },
+    "info": {
+      "instantBookTitle": "Préférez-vous réserver instantanément ?",
+      "instantBookText": "Obtenez un devis et réservez votre créneau en moins de 60 secondes.",
+      "callTitle": "Appelez-nous",
+      "callHours": "Lun–Sam, 8h–19h",
+      "emailTitle": "Courriel",
+      "areaTitle": "Zone desservie",
+      "areaLine1": "Région du Grand Toronto",
+      "areaLine2": "et environs"
+    }
+  },
+  "booking": {
+    "kicker": "Réserver en ligne",
+    "title": "Votre nettoyage, réservé en 60 secondes",
+    "lead": "Répondez à quelques questions et obtenez une estimation instantanée — aucun appel requis.",
+    "steps": {
+      "service": "Service",
+      "size": "Taille",
+      "frequency": "Fréquence",
+      "schedule": "Horaire",
+      "details": "Détails"
+    },
+    "q": {
+      "service": "Que voulez-vous faire nettoyer ?",
+      "size": "Quelle est la taille de votre espace ?",
+      "frequency": "À quelle fréquence ?",
+      "schedule": "Choisissez une date préférée",
+      "details": "Presque terminé — vos coordonnées"
+    },
+    "preferredDate": "Date préférée",
+    "scheduleHint": "Nous confirmerons l'heure exacte lors du rappel.",
+    "fullName": "Nom complet",
+    "fullNamePlaceholder": "Votre nom",
+    "email": "Courriel",
+    "emailPlaceholder": "vous@courriel.com",
+    "phone": "Téléphone",
+    "phonePlaceholder": "(416) 555-0123",
+    "estimatedQuote": "Devis estimé",
+    "perVisit": "/ visite",
+    "perClean": "/ nettoyage",
+    "commercialQuote": "Devis commercial personnalisé — nous vous rappellerons",
+    "selectToSee": "Sélectionnez des options pour voir votre estimation",
+    "confirm": "Confirmer la réservation",
+    "successTitle": "Demande de réservation reçue !",
+    "successText": "Merci {{name}} ! Nous confirmerons votre rendez-vous {{tier}}{{date}} dans un jour ouvrable.",
+    "successDate": " pour le {{date}}",
+    "successQuote": " Votre devis estimé est de {{quote}}."
+  },
+  "serviceArea": {
+    "kicker": "Où nous nettoyons",
+    "title": "Au service de la région du Grand Toronto",
+    "text": "Nous apportons les mêmes équipes de confiance et la même norme constante dans toute la RGT et les régions environnantes.",
+    "mapTitle": "Zone desservie par Suyusan Solutions — Région du Grand Toronto"
+  },
+  "testimonials": {
+    "sarah": { "service": "Commercial et bureaux", "quote": "Suyusan a transformé notre bureau. L'équipe est fiable, professionnelle et notre espace n'a jamais été aussi beau. Hautement recommandé pour toute entreprise dans la RGT." },
+    "james": { "service": "Nettoyage en profondeur", "quote": "Nous utilisons Suyusan pour les nettoyages mensuels et ils ne déçoivent jamais. Même équipe à chaque fois — cette constance est inestimable." },
+    "margaret": { "service": "Nettoyage régulier", "quote": "Ma maison est impeccable après chaque visite. Les produits écologiques sont parfaits pour mes petits-enfants. Le meilleur service que j'ai essayé depuis des années." },
+    "david": { "service": "Emménagement / déménagement", "quote": "J'ai réservé un nettoyage de déménagement et j'ai récupéré tout mon dépôt. L'endroit était mieux qu'à mon arrivée. Rapide, minutieux et bien tarifé." },
+    "priya": { "service": "Conciergerie en résidence pour aînés", "quote": "Notre résidence compte sur Suyusan depuis plus d'un an. Leur personnel est respectueux avec les résidents et leur documentation est impeccable." }
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "text": "La page que vous cherchez n'existe pas ou a été déplacée.",
+    "goHome": "Retour à l'accueil"
+  },
+  "errorPage": {
+    "title": "Cette page ne s'est pas chargée",
+    "text": "Quelque chose a mal tourné. Vous pouvez réessayer ou revenir à l'accueil.",
+    "tryAgain": "Réessayer",
+    "goHome": "Retour à l'accueil"
+  },
+  "theme": {
+    "toLight": "Passer en mode clair",
+    "toDark": "Passer en mode sombre",
+    "toggle": "Changer le thème"
+  }
+}

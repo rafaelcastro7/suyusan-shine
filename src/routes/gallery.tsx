@@ -1,9 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, useEffect, useCallback } from "react";
+import { useTranslation } from "react-i18next";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { FadeIn } from "@/components/FadeIn";
+import { useDocumentMeta } from "@/hooks/use-document-meta";
 
 export const Route = createFileRoute("/gallery")({
   component: GalleryPage,
@@ -21,25 +23,22 @@ export const Route = createFileRoute("/gallery")({
   }),
 });
 
-// 15 gallery images
-const galleryImages = Array.from({ length: 15 }, (_, i) => ({
-  id: i + 1,
-  src: `/Galeria/${String(i + 1).padStart(2, '0')}.jpeg`,
-  alt: `Professional cleaning service ${i + 1}`,
-}));
+const galleryIds = Array.from({ length: 15 }, (_, i) => i + 1);
 
 function GalleryPage() {
+  const { t } = useTranslation();
+  useDocumentMeta("meta.gallery.title", "meta.gallery.description");
   const [selectedId, setSelectedId] = useState<number | null>(null);
-  const selectedImage = selectedId ? galleryImages.find(img => img.id === selectedId) : null;
+  const total = galleryIds.length;
+  const selected = selectedId ? { id: selectedId, src: `/Galeria/${String(selectedId).padStart(2, '0')}.jpeg` } : null;
 
   const goPrev = useCallback(() => {
-    setSelectedId((id) => (id === null ? null : id === 1 ? galleryImages.length : id - 1));
-  }, []);
+    setSelectedId((id) => (id === null ? null : id === 1 ? total : id - 1));
+  }, [total]);
   const goNext = useCallback(() => {
-    setSelectedId((id) => (id === null ? null : id === galleryImages.length ? 1 : id + 1));
-  }, []);
+    setSelectedId((id) => (id === null ? null : id === total ? 1 : id + 1));
+  }, [total]);
 
-  // Keyboard navigation: ← → Esc
   useEffect(() => {
     if (selectedId === null) return;
     const onKey = (e: KeyboardEvent) => {
@@ -55,35 +54,29 @@ function GalleryPage() {
     <div className="min-h-screen flex flex-col">
       <SiteHeader />
 
-      {/* Hero */}
       <section className="bg-[var(--gradient-soft)] border-b border-border">
         <div className="mx-auto max-w-7xl px-5 lg:px-8 py-20 lg:py-28">
           <FadeIn variant="fade-up">
-            <div className="text-xs uppercase tracking-[0.2em] text-primary font-semibold">Gallery</div>
-            <h1 className="mt-4 font-display text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight max-w-3xl">
-              Our work speaks for itself
-            </h1>
-            <p className="mt-5 text-lg text-muted-foreground max-w-2xl">
-              From sparkling kitchens to pristine office spaces, here's a glimpse of the transformation we bring to every project.
-            </p>
+            <div className="text-xs uppercase tracking-[0.2em] text-primary font-semibold">{t("gallery.kicker")}</div>
+            <h1 className="mt-4 font-display text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight max-w-3xl">{t("gallery.title")}</h1>
+            <p className="mt-5 text-lg text-muted-foreground max-w-2xl">{t("gallery.lead")}</p>
           </FadeIn>
         </div>
       </section>
 
-      {/* Gallery Grid */}
       <section className="mx-auto max-w-7xl px-5 lg:px-8 py-20">
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {galleryImages.map((image, index) => (
+          {galleryIds.map((id, index) => (
             <FadeIn
-              key={image.id}
+              key={id}
               variant="fade-up"
               delay={index * 50}
               className="group cursor-pointer relative overflow-hidden rounded-2xl bg-card border border-border aspect-[4/3]"
-              onClick={() => setSelectedId(image.id)}
+              onClick={() => setSelectedId(id)}
             >
               <img
-                src={image.src}
-                alt={image.alt}
+                src={`/Galeria/${String(id).padStart(2, '0')}.jpeg`}
+                alt={t("gallery.imageAlt", { n: id })}
                 loading="lazy"
                 className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-300"
               />
@@ -93,59 +86,51 @@ function GalleryPage() {
         </div>
       </section>
 
-      {/* Lightbox */}
-      {selectedImage && (
+      {selected && (
         <div
           className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4"
           onClick={() => setSelectedId(null)}
         >
-          <div className="relative max-w-4xl w-full" onClick={e => e.stopPropagation()}>
-            <img
-              src={selectedImage.src}
-              alt={selectedImage.alt}
-              className="w-full h-auto rounded-xl"
-            />
+          <div className="relative max-w-4xl w-full" onClick={(e) => e.stopPropagation()}>
+            <img src={selected.src} alt={t("gallery.imageAlt", { n: selected.id })} className="w-full h-auto rounded-xl" />
             <button
               onClick={() => setSelectedId(null)}
               className="absolute top-4 right-4 h-10 w-10 rounded-full bg-white/20 hover:bg-white/30 grid place-items-center transition"
-              aria-label="Close lightbox"
+              aria-label={t("common.close")}
             >
               <X className="h-5 w-5 text-white" />
             </button>
 
-            {/* Counter */}
             <div className="absolute top-4 left-4 rounded-full bg-black/40 px-3 py-1 text-sm font-medium text-white">
-              {`${selectedImage.id} / ${galleryImages.length}`}
+              {`${selected.id} / ${total}`}
             </div>
 
-            {/* Prev / Next arrows */}
             <button
               onClick={goPrev}
               className="absolute left-2 top-1/2 -translate-y-1/2 h-11 w-11 rounded-full bg-white/20 hover:bg-white/30 grid place-items-center transition"
-              aria-label="Previous image"
+              aria-label={t("common.prev")}
             >
               <ChevronLeft className="h-6 w-6 text-white" />
             </button>
             <button
               onClick={goNext}
               className="absolute right-2 top-1/2 -translate-y-1/2 h-11 w-11 rounded-full bg-white/20 hover:bg-white/30 grid place-items-center transition"
-              aria-label="Next image"
+              aria-label={t("common.next")}
             >
               <ChevronRight className="h-6 w-6 text-white" />
             </button>
 
-            {/* Dots */}
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-              {galleryImages.map(img => (
+              {galleryIds.map((id) => (
                 <button
-                  key={img.id}
-                  onClick={() => setSelectedId(img.id)}
+                  key={id}
+                  onClick={() => setSelectedId(id)}
                   className={`h-2 rounded-full transition ${
-                    img.id === selectedImage.id
+                    id === selected.id
                       ? 'bg-white w-8'
                       : 'bg-white/40 hover:bg-white/60 w-2'
                   }`}
-                  aria-label={`View image ${img.id}`}
+                  aria-label={t("gallery.imageAlt", { n: id })}
                 />
               ))}
             </div>

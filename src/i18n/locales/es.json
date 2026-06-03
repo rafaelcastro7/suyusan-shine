@@ -1,0 +1,517 @@
+{
+  "language": { "label": "Idioma" },
+  "nav": {
+    "services": "Servicios",
+    "pricing": "Precios",
+    "gallery": "Galería",
+    "about": "Nosotros",
+    "faq": "FAQ",
+    "contact": "Contacto",
+    "bookCta": "Reservar en 60s",
+    "menu": "Menú"
+  },
+  "footer": {
+    "tagline": "Servicios profesionales de limpieza residencial y comercial en toda el área metropolitana de Toronto. Asegurados, garantizados y comprometidos con un espacio impecable y más saludable.",
+    "explore": "Explorar",
+    "getStarted": "Comenzar",
+    "requestQuote": "Solicitar cotización",
+    "contact": "Contacto",
+    "serviceAreas": "Zonas de servicio",
+    "rights": "Todos los derechos reservados.",
+    "insured": "Asegurados y garantizados · Sirviendo al GTA"
+  },
+  "common": {
+    "from": "desde",
+    "back": "Atrás",
+    "continue": "Continuar",
+    "bookIn60s": "Reservar en 60s",
+    "seePricing": "Ver precios",
+    "requestQuote": "Solicitar cotización",
+    "bookNow": "Reservar ahora",
+    "close": "Cerrar",
+    "prev": "Anterior",
+    "next": "Siguiente"
+  },
+  "meta": {
+    "home": {
+      "title": "Suyusan Solutions — Limpieza en el GTA",
+      "description": "Limpieza residencial y comercial asegurada en todo el GTA — regular, profunda, post-construcción y residencias para adultos mayores. Reserve en 60 segundos.",
+      "ogTitle": "Suyusan Solutions — Limpieza en el GTA",
+      "ogDescription": "Limpieza residencial y comercial asegurada en el GTA. Reserve en línea en 60 segundos."
+    },
+    "about": {
+      "title": "Nosotros — Suyusan Solutions Inc.",
+      "description": "Conozca a Suyusan Solutions — una empresa de limpieza del GTA construida sobre el cuidado, la constancia y equipos verificados.",
+      "ogTitle": "Acerca de Suyusan Solutions Inc.",
+      "ogDescription": "Una empresa de limpieza del GTA construida sobre el cuidado y la constancia."
+    },
+    "services": {
+      "title": "Servicios de limpieza — Suyusan Solutions",
+      "description": "Limpieza regular, profunda, post-construcción, para adultos mayores, comercial, mudanza y residencias en todo el GTA.",
+      "ogTitle": "Servicios de limpieza — Suyusan Solutions",
+      "ogDescription": "Limpieza residencial, comercial y especializada en el GTA."
+    },
+    "pricing": {
+      "title": "Precios — Suyusan Solutions",
+      "description": "Precios de limpieza transparentes. Tarifas iniciales para limpieza del hogar, limpiezas profundas y cotizaciones comerciales personalizadas en el GTA.",
+      "ogTitle": "Precios — Suyusan Solutions",
+      "ogDescription": "Tarifas iniciales transparentes para limpieza residencial y comercial en el GTA."
+    },
+    "gallery": {
+      "title": "Galería — Suyusan Solutions",
+      "description": "Fotos de nuestro trabajo de limpieza en hogares, oficinas y residencias para adultos mayores del GTA.",
+      "ogTitle": "Galería — Suyusan Solutions",
+      "ogDescription": "Fotos de nuestro trabajo residencial, comercial y de cuidado de adultos mayores."
+    },
+    "faq": {
+      "title": "FAQ — Suyusan Solutions",
+      "description": "Respuestas sobre seguros, productos, programación, precios, mascotas y nuestra zona de servicio en el GTA.",
+      "ogTitle": "FAQ — Suyusan Solutions",
+      "ogDescription": "Respuestas a preguntas frecuentes sobre nuestros servicios de limpieza en el GTA."
+    },
+    "contact": {
+      "title": "Contacto — Suyusan Solutions",
+      "description": "Obtenga una cotización gratis para su hogar, oficina o residencia. Contáctenos por teléfono, correo o formulario.",
+      "ogTitle": "Contactar a Suyusan Solutions",
+      "ogDescription": "Obtenga una cotización gratuita por teléfono, correo o formulario."
+    },
+    "booking": {
+      "title": "Reservar en línea — Suyusan Solutions",
+      "description": "Reserve su limpieza en menos de 60 segundos. Elija servicio, tamaño y horario y obtenga una cotización instantánea.",
+      "ogTitle": "Reservar en línea — Suyusan Solutions",
+      "ogDescription": "Reserve su limpieza en 60 segundos y obtenga una cotización instantánea."
+    }
+  },
+  "home": {
+    "heroBadge": "Aceptando reservas en todo el GTA",
+    "heroLine1": "Un espacio impecable.",
+    "heroLine2": "Una mente más clara.",
+    "heroLead": "Suyusan Solutions Inc. ofrece limpieza confiable y detallada para hogares, oficinas y residencias para adultos mayores. Asegurados, garantizados y capacitados — reserve en línea en 60 segundos.",
+    "stats": {
+      "homes": "Hogares limpiados",
+      "rating": "Calificación de clientes",
+      "satisfaction": "Satisfacción"
+    },
+    "ecoBadge": "Productos ecológicos",
+    "ecoBadgeText": "Seguros para niños y mascotas",
+    "trust": {
+      "insured": "Asegurados y garantizados",
+      "insuredText": "Cobertura de responsabilidad completa",
+      "trained": "Equipos capacitados",
+      "trainedText": "Personal con verificación de antecedentes",
+      "eco": "Productos ecológicos",
+      "ecoText": "Bajo COV, seguros para la familia",
+      "ontime": "Servicio puntual",
+      "ontimeText": "Horarios confiables"
+    },
+    "bento": {
+      "kicker": "Lo que hacemos",
+      "title": "Servicios de limpieza para cada espacio",
+      "lead": "Desde el mantenimiento regular del hogar hasta contratos comerciales y turnos nocturnos en residencias — un solo equipo, un solo estándar.",
+      "viewAll": "Ver todos los servicios",
+      "featureTitle": "Limpieza profunda integral",
+      "featureText": "Restablecimientos de arriba a abajo que llegan a todo lo que el servicio regular no alcanza.",
+      "exploreDeep": "Explorar limpieza profunda",
+      "ctaTitle": "¿No está seguro de lo que necesita?",
+      "ctaText": "Obtenga una cotización gratuita en menos de un minuto."
+    },
+    "how": {
+      "kicker": "Cómo funciona",
+      "title": "Limpieza en tres pasos sencillos",
+      "step1Title": "Reserve en línea",
+      "step1Text": "Elija su servicio, tamaño y horario en menos de 60 segundos — obtenga una cotización al instante.",
+      "step2Title": "Limpiamos",
+      "step2Text": "Su equipo confiable y verificado llega a tiempo con productos ecológicos.",
+      "step3Title": "Usted descansa",
+      "step3Text": "Regrese a un espacio impecable — respaldado por nuestra garantía de satisfacción del 100 %."
+    },
+    "pricingPreview": {
+      "kicker": "Precios transparentes",
+      "title": "Tarifas simples y claras",
+      "lead": "Sin cargos ocultos, sin sorpresas. Vea cuánto pagará antes de reservar."
+    },
+    "testimonials": {
+      "kicker": "La confianza de cientos de clientes",
+      "title": "Lo que dicen nuestros clientes"
+    },
+    "gallery": {
+      "kicker": "Nuestro trabajo",
+      "title": "Vea la transformación",
+      "viewAll": "Ver todas las fotos"
+    },
+    "faqPreview": {
+      "kicker": "Preguntas",
+      "title": "Preguntas frecuentes",
+      "viewAll": "Ver todas las FAQ"
+    },
+    "cta": {
+      "title": "¿Listo para un espacio más limpio?",
+      "text": "Reserve en línea en menos de un minuto, o cuéntenos sobre su instalación y le enviaremos una cotización gratuita en un día hábil.",
+      "call": "Llamar (416) 555-0123"
+    }
+  },
+  "about": {
+    "kicker": "Nosotros",
+    "title": "Limpieza, con cuidado en cada detalle.",
+    "lead": "Suyusan Solutions Inc. es una empresa canadiense de limpieza construida sobre una idea simple: un espacio limpio cambia cómo se siente en él. Desde una sola casa hasta una residencia de 200 suites, nuestra promesa es la misma — presentarnos, hacerlo bien y dejarlo mejor de como lo encontramos.",
+    "stats": {
+      "homes": "Hogares y oficinas limpiados",
+      "rating": "Calificación promedio",
+      "regions": "Regiones del GTA atendidas",
+      "satisfaction": "Garantía de satisfacción"
+    },
+    "values": {
+      "care": { "title": "Cuidado", "text": "Tratamos cada espacio — y a las personas que están en él — como si fueran nuestra propia familia." },
+      "standards": { "title": "Estándares", "text": "Listas documentadas, equipos supervisados y una garantía de satisfacción del 100 %." },
+      "people": { "title": "Personas primero", "text": "Salarios justos, capacitación y respeto para cada miembro del equipo." },
+      "sustainability": { "title": "Sostenibilidad", "text": "Productos biodegradables de bajo COV que protegen su hogar y nuestro planeta." }
+    },
+    "why": {
+      "kicker": "Por qué Suyusan",
+      "title": "Construidos para hogares, escalados para instalaciones.",
+      "text": "Comenzamos con clientes residenciales y crecimos hacia contratos comerciales y residencias para adultos mayores porque nuestros clientes nos lo pedían. Esa misma atención residencial al detalle es la que llevamos a cada espacio comercial.",
+      "cta": "Trabaje con nosotros"
+    }
+  },
+  "services": {
+    "kicker": "Servicios",
+    "title": "Soluciones de limpieza para cada tipo de espacio",
+    "lead": "Un equipo de confianza, un estándar constante — desde una visita residencial recurrente hasta múltiples turnos en una residencia.",
+    "categories": {
+      "all": "Todos los servicios",
+      "residential": "Residencial",
+      "commercial": "Comercial",
+      "specialty": "Especializado"
+    },
+    "serviceLabel": "Servicio",
+    "requestService": "Solicitar este servicio",
+    "cta": {
+      "title": "¿Encontró el servicio adecuado?",
+      "text": "Reserve en línea en 60 segundos con cotización instantánea, o consulte primero los precios transparentes."
+    },
+    "items": {
+      "regular-cleaning": {
+        "title": "Limpieza regular",
+        "short": "Mantenimiento semanal, quincenal o mensual que mantiene su hogar siempre fresco.",
+        "description": "Nuestro servicio de limpieza recurrente está diseñado para mantener un hogar saludable, ordenado y acogedor con visitas predecibles y un equipo de confianza. Cada visita sigue una lista detallada que cubre desempolvado, aspirado, trapeado, cocina y baños.",
+        "bullets": [
+          "Desempolvado de todas las superficies accesibles, zócalos y decoración",
+          "Mesones de cocina, fregadero, estufa y exterior de electrodomésticos",
+          "Baños: tinas, duchas, inodoros, espejos y accesorios",
+          "Aspirar y trapear todos los pisos; sacar basura y reciclaje"
+        ]
+      },
+      "deep-cleaning": {
+        "title": "Limpieza profunda / estacional",
+        "short": "Un restablecimiento integral para la primavera, el otoño o cuando su hogar más lo necesite.",
+        "description": "Una limpieza profunda meticulosa habitación por habitación que aborda todo lo que el servicio regular no alcanza. Ideal para la limpieza de primavera, preparación de fiestas o restauración de un hogar que no se ha limpiado en un tiempo.",
+        "bullets": [
+          "Ventanas por dentro, rieles, alféizares y persianas",
+          "Fregado detallado de lechada, baldosas y acumulaciones",
+          "Luminarias, ventiladores de techo, conductos y marcos de puertas",
+          "Limpieza manual del exterior de gabinetes y superficies de uso frecuente"
+        ]
+      },
+      "post-construction": {
+        "title": "Post-renovación y post-construcción",
+        "short": "Eliminamos polvo, escombros y residuos para que su espacio renovado esté listo para mudarse.",
+        "description": "La construcción crea polvo fino que se asienta en cada rincón. Nuestros equipos realizan una limpieza en varias etapas — gruesa, final y retoques — utilizando aspiradoras HEPA y los productos adecuados.",
+        "bullets": [
+          "Aspirado HEPA de pisos, paredes, conductos y accesorios",
+          "Eliminación de salpicaduras de pintura, adhesivos y calcomanías",
+          "Pulido de vidrio, espejos, acero inoxidable y cromo",
+          "Pasada final antes del recorrido con el cliente"
+        ]
+      },
+      "senior-cleaning": {
+        "title": "Limpieza para adultos mayores",
+        "short": "Limpieza compasiva y confiable adaptada a las necesidades de los adultos mayores.",
+        "description": "Un servicio respetuoso y poco invasivo diseñado para adultos mayores que envejecen en su hogar. Nuestro equipo capacitado es paciente, se comunica claramente y usa productos suaves de baja emisión.",
+        "bullets": [
+          "Reducción de riesgos de caídas (alfombras, cables, desorden)",
+          "Desinfección de barras de apoyo, ayudas de movilidad y zonas de uso frecuente",
+          "Lavandería y cambio de ropa de cama disponibles",
+          "El mismo equipo en cada visita — rostros familiares y de confianza"
+        ]
+      },
+      "appliances": {
+        "title": "Limpieza incluyendo electrodomésticos",
+        "short": "Servicio adicional para horno, refrigerador, microondas y lavandería.",
+        "description": "Un servicio adicional o independiente para los electrodomésticos que requieren tiempo y producto adecuado. Desengrasamos, descalcificamos y desinfectamos las superficies que usa todos los días.",
+        "bullets": [
+          "Interior del horno, rejillas y campana",
+          "Interior del refrigerador y congelador (alimentos reubicados temporalmente)",
+          "Microondas, lavavajillas y pequeños electrodomésticos",
+          "Tambor de lavadora y secadora, junta y sistema de pelusa"
+        ]
+      },
+      "staging": {
+        "title": "Limpieza para staging",
+        "short": "Detalle perfecto para apoyar el staging inmobiliario.",
+        "description": "Una limpieza centrada en el detalle coordinada con stagers, fotógrafos y agentes inmobiliarios. Los compradores notan todo — nos aseguramos de que solo noten lo correcto.",
+        "bullets": [
+          "Vidrio, espejos y acero inoxidable sin marcas",
+          "Retoques entre visitas a pedido",
+          "Programación coordinada con su stager",
+          "Presencia discreta en el sitio"
+        ]
+      },
+      "commercial-office": {
+        "title": "Limpieza comercial y de oficinas",
+        "short": "Limpieza fuera del horario que mantiene a su equipo saludable y productivo.",
+        "description": "Programas de limpieza personalizables para oficinas, clínicas, estudios y comercios. Trabajamos según sus horarios, seguimos listas documentadas y ofrecemos un único punto de contacto.",
+        "bullets": [
+          "Estaciones de trabajo, salas de reunión, cocinas y baños",
+          "Reabastecimiento de papel, jabón y suministros",
+          "Cuidado de pisos: aspirar, trapear, pulir y ciclos profundos periódicos",
+          "Horarios diarios, vespertinos o de fin de semana"
+        ]
+      },
+      "move-in-out": {
+        "title": "Limpieza de mudanza",
+        "short": "Una entrega impecable para inquilinos, propietarios y administradores.",
+        "description": "Preparamos la propiedad para el siguiente capítulo. Diseñado para cumplir con los requisitos de alquiler y venta, nuestro paquete es completo y documentado.",
+        "bullets": [
+          "Interior de gabinetes, cajones, armarios y despensas",
+          "Limpieza interior detallada de electrodomésticos",
+          "Paredes con limpieza puntual, zócalos y molduras",
+          "Acabado listo para la inspección final"
+        ]
+      },
+      "retirement-housekeeping": {
+        "title": "Servicio en residencias para adultos mayores",
+        "short": "Apoyo de limpieza de día y noche para residencias.",
+        "description": "Limpieza contratada confiable para comunidades de adultos mayores. Nuestro personal está capacitado en lo básico de control de infecciones, comunicación centrada en el residente y el ritmo operativo del cuidado a largo plazo.",
+        "bullets": [
+          "Suites de residentes, salas comunes y comedores",
+          "Cobertura disponible de día y de noche",
+          "EPP, hojas de registro y reportes de supervisor",
+          "Equipo verificado y uniformado"
+        ]
+      }
+    }
+  },
+  "pricing": {
+    "kicker": "Precios",
+    "title": "Precios simples y transparentes",
+    "lead": "Sin cargos ocultos. Vea su tarifa inicial por adelantado y reserve en línea en 60 segundos con una cotización instantánea.",
+    "footnote": "El precio final depende del tamaño del hogar y la frecuencia. El servicio recurrente ahorra hasta un 20 %.",
+    "getExact": "Obtenga su cotización exacta →",
+    "faqTitle": "Preguntas sobre precios",
+    "mostPopular": "Más popular",
+    "customQuote": "Cotización personalizada",
+    "cta": { "title": "¿Listo para reservar?", "text": "Obtenga su cotización personalizada en menos de un minuto." },
+    "tiers": {
+      "home": {
+        "name": "Limpieza del hogar",
+        "tagline": "Mantenimiento recurrente para casas y condominios",
+        "unit": "por visita",
+        "features": [
+          "Semanal, quincenal o mensual",
+          "El mismo equipo de confianza en cada visita",
+          "Cocina, baños, pisos y desempolvado",
+          "Productos ecológicos incluidos",
+          "Garantía de satisfacción del 100 %"
+        ]
+      },
+      "deep": {
+        "name": "Limpieza profunda",
+        "tagline": "Restablecimiento estacional integral",
+        "unit": "por limpieza",
+        "features": [
+          "Todo lo de Limpieza del hogar",
+          "Ventanas por dentro, rieles y persianas",
+          "Fregado de lechada, baldosas y acumulaciones",
+          "Luminarias, conductos y marcos de puertas",
+          "Exteriores de gabinetes limpiados a mano"
+        ]
+      },
+      "commercial": {
+        "name": "Comercial",
+        "tagline": "Oficinas, clínicas y residencias",
+        "unit": "cotización personalizada",
+        "features": [
+          "Programas de limpieza personalizados",
+          "Horarios de día, tarde o fin de semana",
+          "Asegurados, garantizados y verificados",
+          "Punto de contacto único",
+          "Reabastecimiento de suministros disponible"
+        ]
+      }
+    },
+    "sizes": {
+      "studio": "Estudio / 1 dormitorio",
+      "2bed": "2 dormitorios",
+      "3bed": "3 dormitorios",
+      "4bed": "4 dormitorios",
+      "5plus": "5+ dormitorios"
+    },
+    "frequencies": {
+      "once": "Una sola vez",
+      "monthly": "Mensual",
+      "biweekly": "Quincenal",
+      "weekly": "Semanal",
+      "save": "Ahorre {{percent}} %"
+    }
+  },
+  "gallery": {
+    "kicker": "Galería",
+    "title": "Nuestro trabajo habla por sí mismo",
+    "lead": "Desde cocinas relucientes hasta oficinas impecables, aquí hay un vistazo a la transformación que llevamos a cada proyecto.",
+    "imageAlt": "Servicio de limpieza profesional {{n}}"
+  },
+  "faq": {
+    "kicker": "Centro de ayuda",
+    "title": "Preguntas frecuentes",
+    "lead": "Todo lo que necesita saber sobre Suyusan. ¿No encuentra su respuesta? Contáctenos.",
+    "stillTitle": "¿Aún tiene preguntas?",
+    "stillText": "Nuestro equipo estará encantado de ayudarle a encontrar el servicio adecuado.",
+    "contactUs": "Contáctenos",
+    "items": {
+      "insured": {
+        "q": "¿Están asegurados y garantizados?",
+        "a": "Sí. Suyusan Solutions Inc. cuenta con seguro de responsabilidad completo y está garantizada. Cada limpiador tiene verificación de antecedentes y capacitación antes de entrar en su espacio."
+      },
+      "supplies": {
+        "q": "¿Debo proporcionar productos o equipo de limpieza?",
+        "a": "No. Llegamos completamente equipados con herramientas profesionales y productos ecológicos de bajo COV, seguros para niños y mascotas. Si prefiere sus propios productos, háganoslo saber."
+      },
+      "sameCleaner": {
+        "q": "¿Tendré al mismo limpiador cada vez?",
+        "a": "Siempre que sea posible, sí. Asignamos el mismo equipo a sus visitas recurrentes para que aprendan sus preferencias."
+      },
+      "guarantee": {
+        "q": "¿Cuál es su garantía de satisfacción?",
+        "a": "Si no está satisfecho con alguna zona limpiada, avísenos dentro de las 24 horas y volveremos a limpiarla sin cargo. Satisfacción garantizada al 100 %."
+      },
+      "pay": {
+        "q": "¿Cómo pago?",
+        "a": "Aceptamos tarjeta de crédito, transferencias electrónicas y facturación para cuentas comerciales. El pago se realiza después de cada visita — sin depósitos iniciales grandes para servicio residencial."
+      },
+      "cancellation": {
+        "q": "¿Cuál es la política de cancelación?",
+        "a": "Puede reprogramar o cancelar hasta 24 horas antes de su cita sin cargo. Las cancelaciones dentro de las 24 horas pueden tener un cargo."
+      },
+      "pets": {
+        "q": "¿Limpian si tengo mascotas?",
+        "a": "Absolutamente. Nuestros productos son seguros para mascotas y nuestros equipos están cómodos con animales. Avísenos sobre sus mascotas al reservar."
+      },
+      "areas": {
+        "q": "¿Qué zonas atienden?",
+        "a": "Atendemos el área metropolitana de Toronto y regiones cercanas, incluyendo Toronto, Mississauga, Oakville, Vaughan, Markham, Richmond Hill y Brampton. ¿No está seguro? Pregúntenos."
+      },
+      "home": {
+        "q": "¿Debo estar en casa durante la limpieza?",
+        "a": "Para nada. Muchos clientes proporcionan una llave o código. Nuestros equipos garantizados y verificados son de confianza en cientos de hogares y negocios."
+      },
+      "advance": {
+        "q": "¿Con cuánta anticipación debo reservar?",
+        "a": "Para servicio recurrente recomendamos reservar unos días antes. Para limpiezas profundas y mudanzas, 3–5 días de aviso ayudan. ¿Lo necesita antes? Haremos lo posible."
+      }
+    }
+  },
+  "contact": {
+    "kicker": "Contacto",
+    "title": "Hagamos brillar su espacio.",
+    "lead": "Cuéntenos un poco sobre sus necesidades y le responderemos con una cotización gratuita en un día hábil.",
+    "getInTouch": "Póngase en contacto",
+    "serviceArea": "Zona de servicio",
+    "form": {
+      "name": "Nombre completo",
+      "namePlaceholder": "Su nombre",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "su@correo.com",
+      "phone": "Teléfono",
+      "phonePlaceholder": "(416) 555-0123",
+      "service": "Servicio",
+      "selectService": "Seleccione un servicio…",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntenos sobre su espacio, metros cuadrados y horario preferido…",
+      "send": "Enviar solicitud",
+      "thanksTitle": "¡Gracias!",
+      "thanksText": "Recibimos su solicitud y nos comunicaremos en un día hábil."
+    },
+    "errors": {
+      "nameRequired": "El nombre es obligatorio",
+      "emailValid": "Correo válido requerido",
+      "serviceRequired": "Seleccione un servicio",
+      "messageMin": "El mensaje debe tener al menos 10 caracteres"
+    },
+    "info": {
+      "instantBookTitle": "¿Prefiere reservar al instante?",
+      "instantBookText": "Obtenga una cotización y reserve su horario en menos de 60 segundos.",
+      "callTitle": "Llámenos",
+      "callHours": "Lun–Sáb, 8am–7pm",
+      "emailTitle": "Correo electrónico",
+      "areaTitle": "Zona de servicio",
+      "areaLine1": "Área metropolitana de Toronto",
+      "areaLine2": "y regiones cercanas"
+    }
+  },
+  "booking": {
+    "kicker": "Reservar en línea",
+    "title": "Su limpieza, reservada en 60 segundos",
+    "lead": "Responda algunas preguntas y obtenga una estimación instantánea — sin llamada telefónica.",
+    "steps": {
+      "service": "Servicio",
+      "size": "Tamaño",
+      "frequency": "Frecuencia",
+      "schedule": "Horario",
+      "details": "Detalles"
+    },
+    "q": {
+      "service": "¿Qué necesita limpiar?",
+      "size": "¿Qué tamaño tiene su espacio?",
+      "frequency": "¿Con qué frecuencia?",
+      "schedule": "Elija una fecha preferida",
+      "details": "Casi listo — sus datos"
+    },
+    "preferredDate": "Fecha preferida",
+    "scheduleHint": "Confirmaremos la franja horaria exacta cuando le devolvamos la llamada.",
+    "fullName": "Nombre completo",
+    "fullNamePlaceholder": "Su nombre",
+    "email": "Correo electrónico",
+    "emailPlaceholder": "tu@correo.com",
+    "phone": "Teléfono",
+    "phonePlaceholder": "(416) 555-0123",
+    "estimatedQuote": "Cotización estimada",
+    "perVisit": "/ visita",
+    "perClean": "/ limpieza",
+    "commercialQuote": "Cotización comercial personalizada — le llamaremos",
+    "selectToSee": "Seleccione opciones para ver su estimación",
+    "confirm": "Confirmar reserva",
+    "successTitle": "¡Solicitud de reserva recibida!",
+    "successText": "¡Gracias {{name}}! Confirmaremos su cita de {{tier}}{{date}} en un día hábil.",
+    "successDate": " para el {{date}}",
+    "successQuote": " Su cotización estimada es {{quote}}."
+  },
+  "serviceArea": {
+    "kicker": "Dónde limpiamos",
+    "title": "Sirviendo al área metropolitana de Toronto",
+    "text": "Llevamos los mismos equipos de confianza y el mismo estándar en todo el GTA y regiones cercanas.",
+    "mapTitle": "Zona de servicio de Suyusan Solutions — Área metropolitana de Toronto"
+  },
+  "testimonials": {
+    "sarah": { "service": "Comercial y oficinas", "quote": "Suyusan transformó nuestra oficina. El equipo es confiable, profesional y nuestro espacio nunca se vio mejor. Muy recomendable para cualquier negocio en el GTA." },
+    "james": { "service": "Limpieza profunda", "quote": "Usamos a Suyusan para limpiezas profundas mensuales y nunca decepcionan. Mismo equipo cada vez — esa consistencia es invaluable." },
+    "margaret": { "service": "Limpieza regular", "quote": "Mi casa queda impecable después de cada visita. Los productos ecológicos son perfectos para mis nietos. El mejor servicio que he probado en años." },
+    "david": { "service": "Mudanza", "quote": "Reservé una limpieza de mudanza y recuperé todo mi depósito. El lugar se veía mejor que cuando me mudé. Rápido, completo y bien tarifado." },
+    "priya": { "service": "Residencia para adultos mayores", "quote": "Nuestra residencia depende de Suyusan desde hace más de un año. Su personal es respetuoso con los residentes y su documentación es impecable." }
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "text": "La página que busca no existe o fue movida.",
+    "goHome": "Ir al inicio"
+  },
+  "errorPage": {
+    "title": "Esta página no cargó",
+    "text": "Algo salió mal. Puede intentar actualizar o volver al inicio.",
+    "tryAgain": "Reintentar",
+    "goHome": "Ir al inicio"
+  },
+  "theme": {
+    "toLight": "Cambiar a modo claro",
+    "toDark": "Cambiar a modo oscuro",
+    "toggle": "Cambiar tema"
+  }
+}

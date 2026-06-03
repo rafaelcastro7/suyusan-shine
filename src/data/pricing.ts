@@ -1,92 +1,40 @@
-// Pricing tiers and starting rates (CAD). Editable, deterministic.
-// Rates are "starting at" estimates used by the booking wizard and pricing page.
+// Pricing structural data — IDs, numbers, multipliers. Text labels (name, tagline,
+// unit, features, sizes, frequencies) are translated in locale files at:
+//   pricing.tiers.<id>.{name,tagline,unit,features}
+//   pricing.sizes.<id>
+//   pricing.frequencies.<id>
 
 export type PricingTier = {
   id: string;
-  name: string;
-  tagline: string;
   startingAt: number; // CAD
-  unit: string;
   popular?: boolean;
-  features: string[];
 };
 
 export const pricingTiers: PricingTier[] = [
-  {
-    id: "home",
-    name: "Home Cleaning",
-    tagline: "Recurring upkeep for houses & condos",
-    startingAt: 119,
-    unit: "per visit",
-    features: [
-      "Weekly, bi-weekly or monthly",
-      "Same trusted crew every visit",
-      "Kitchen, bathrooms, floors & dusting",
-      "Eco-friendly products included",
-      "100% satisfaction guarantee",
-    ],
-  },
-  {
-    id: "deep",
-    name: "Deep Clean",
-    tagline: "Top-to-bottom seasonal reset",
-    startingAt: 249,
-    unit: "per clean",
-    popular: true,
-    features: [
-      "Everything in Home Cleaning",
-      "Inside windows, tracks & blinds",
-      "Grout, tile & buildup scrubbing",
-      "Light fixtures, vents & door frames",
-      "Cabinet exteriors hand-wiped",
-    ],
-  },
-  {
-    id: "commercial",
-    name: "Commercial",
-    tagline: "Offices, clinics & retirement homes",
-    startingAt: 0,
-    unit: "custom quote",
-    features: [
-      "Custom janitorial programs",
-      "Day, evening or weekend schedules",
-      "Insured, bonded & background-checked",
-      "Single point of contact",
-      "Supply restocking available",
-    ],
-  },
+  { id: "home", startingAt: 119 },
+  { id: "deep", startingAt: 249, popular: true },
+  { id: "commercial", startingAt: 0 },
 ];
 
-// Size multipliers for the booking wizard (applied to home/deep starting rates).
-export type SizeOption = {
-  id: string;
-  label: string;
-  multiplier: number;
-};
+export type SizeOption = { id: string; multiplier: number };
 
 export const sizeOptions: SizeOption[] = [
-  { id: "studio", label: "Studio / 1 bed", multiplier: 1 },
-  { id: "2bed", label: "2 bedrooms", multiplier: 1.25 },
-  { id: "3bed", label: "3 bedrooms", multiplier: 1.55 },
-  { id: "4bed", label: "4 bedrooms", multiplier: 1.85 },
-  { id: "5plus", label: "5+ bedrooms", multiplier: 2.2 },
+  { id: "studio", multiplier: 1 },
+  { id: "2bed", multiplier: 1.25 },
+  { id: "3bed", multiplier: 1.55 },
+  { id: "4bed", multiplier: 1.85 },
+  { id: "5plus", multiplier: 2.2 },
 ];
 
-// Frequency discounts for recurring service.
-export type FrequencyOption = {
-  id: string;
-  label: string;
-  discount: number; // fraction off, e.g. 0.15 = 15% off
-};
+export type FrequencyOption = { id: string; discount: number };
 
 export const frequencyOptions: FrequencyOption[] = [
-  { id: "once", label: "One-time", discount: 0 },
-  { id: "monthly", label: "Monthly", discount: 0.1 },
-  { id: "biweekly", label: "Bi-weekly", discount: 0.15 },
-  { id: "weekly", label: "Weekly", discount: 0.2 },
+  { id: "once", discount: 0 },
+  { id: "monthly", discount: 0.1 },
+  { id: "biweekly", discount: 0.15 },
+  { id: "weekly", discount: 0.2 },
 ];
 
-// Estimate a quote from tier + size + frequency. Deterministic, no backend.
 export function estimateQuote(tierId: string, sizeId: string, frequencyId: string): number {
   const tier = pricingTiers.find((t) => t.id === tierId);
   const size = sizeOptions.find((s) => s.id === sizeId);
