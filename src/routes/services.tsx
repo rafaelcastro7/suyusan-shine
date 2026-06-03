@@ -7,6 +7,27 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { FadeIn } from "@/components/FadeIn";
 import { services } from "@/data/services";
 import { useDocumentMeta } from "@/hooks/use-document-meta";
+import regularImg from "@/assets/services/regular-cleaning.jpg";
+import deepImg from "@/assets/services/deep-cleaning.jpg";
+import postConstructionImg from "@/assets/services/post-construction.jpg";
+import seniorImg from "@/assets/services/senior-cleaning.jpg";
+import appliancesImg from "@/assets/services/appliances.jpg";
+import stagingImg from "@/assets/services/staging.jpg";
+import commercialImg from "@/assets/services/commercial-office.jpg";
+import moveInOutImg from "@/assets/services/move-in-out.jpg";
+import retirementImg from "@/assets/services/retirement-housekeeping.jpg";
+
+const serviceImages: Record<string, string> = {
+  "regular-cleaning": regularImg,
+  "deep-cleaning": deepImg,
+  "post-construction": postConstructionImg,
+  "senior-cleaning": seniorImg,
+  "appliances": appliancesImg,
+  "staging": stagingImg,
+  "commercial-office": commercialImg,
+  "move-in-out": moveInOutImg,
+  "retirement-housekeeping": retirementImg,
+};
 
 export const Route = createFileRoute("/services")({
   component: ServicesPage,
@@ -102,16 +123,16 @@ function ServicesPage() {
                         </Link>
                       </div>
 
-                      {i < 6 && (
-                        <div className="hidden lg:block">
-                          <img
-                            src={`/Galeria/${String(i + 1).padStart(2, '0')}.jpeg`}
-                            alt={title}
-                            loading="lazy"
-                            className="rounded-2xl border border-border aspect-[4/5] object-cover"
-                          />
-                        </div>
-                      )}
+                      <div className="hidden lg:block">
+                        <img
+                          src={serviceImages[slug]}
+                          alt={title}
+                          width={800}
+                          height={1000}
+                          loading="lazy"
+                          className="rounded-2xl border border-border aspect-[4/5] object-cover w-full"
+                        />
+                      </div>
                     </div>
                   </div>
                 </article>
