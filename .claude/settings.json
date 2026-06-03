@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(git -C . remote -v)",
+      "PowerShell(git -C . branch)",
+      "PowerShell(npm install 2>&1)",
+      "PowerShell(npm run build 2>&1)",
+      "PowerShell(npm run dev 2>&1)",
+      "PowerShell(git checkout -- src/routeTree.gen.ts)",
+      "PowerShell(git push --dry-run origin main 2>&1)",
+      "PowerShell(npm list playwright 2>&1)",
+      "PowerShell(npm install -D @playwright/test 2>&1)",
+      "PowerShell(npx playwright test e2e.spec.ts --headed 2>&1)",
+      "PowerShell(npx playwright test e2e.spec.ts --reporter=list 2>&1)",
+      "PowerShell(git checkout -- src/routeTree.gen.ts package.json)",
+      "PowerShell(git add .gitignore)",
+      "PowerShell(git commit -m \"chore: add e2e testing artifacts to gitignore\")",
+      "PowerShell(git push origin main)"
+    ],
+    "additionalDirectories": [
+      "\\dev",
+      "E:\\Documents\\PROYECTOS\\skillkit\\skills"
+    ]
+  }
+}
