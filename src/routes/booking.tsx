@@ -8,8 +8,14 @@ export const Route = createFileRoute("/booking")({
   component: BookingPage,
   head: () => ({
     meta: [
-      { title: "Book Online — Suyusan Solutions Inc." },
-      { name: "description", content: "Book your cleaning in under 60 seconds. Pick your service, size and schedule, and get an instant quote." },
+      { title: "Book Online — Suyusan Solutions" },
+      { name: "description", content: "Book your cleaning in under 60 seconds. Pick service, size and schedule, and get an instant quote." },
+      { property: "og:title", content: "Book Online — Suyusan Solutions" },
+      { property: "og:description", content: "Book your cleaning in 60 seconds and get an instant quote." },
+      { property: "og:url", content: "https://suyusan-sparkle-solutions.lovable.app/booking" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://suyusan-sparkle-solutions.lovable.app/booking" },
     ],
   }),
 });

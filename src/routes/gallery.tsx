@@ -9,8 +9,14 @@ export const Route = createFileRoute("/gallery")({
   component: GalleryPage,
   head: () => ({
     meta: [
-      { title: "Gallery — Suyusan Solutions Inc." },
-      { name: "description", content: "View our professional cleaning work across residential, commercial, and senior care facilities." },
+      { title: "Gallery — Suyusan Solutions" },
+      { name: "description", content: "Photos of our cleaning work across homes, offices and retirement residences in the GTA." },
+      { property: "og:title", content: "Gallery — Suyusan Solutions" },
+      { property: "og:description", content: "Photos of our residential, commercial and senior-care cleaning work." },
+      { property: "og:url", content: "https://suyusan-sparkle-solutions.lovable.app/gallery" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://suyusan-sparkle-solutions.lovable.app/gallery" },
     ],
   }),
 });

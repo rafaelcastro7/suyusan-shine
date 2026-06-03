@@ -11,8 +11,14 @@ export const Route = createFileRoute("/pricing")({
   component: PricingPage,
   head: () => ({
     meta: [
-      { title: "Pricing — Suyusan Solutions Inc." },
+      { title: "Pricing — Suyusan Solutions" },
       { name: "description", content: "Transparent cleaning prices. Starting rates for home cleaning, deep cleans and custom commercial quotes across the GTA." },
+      { property: "og:title", content: "Pricing — Suyusan Solutions" },
+      { property: "og:description", content: "Transparent starting rates for residential and commercial cleaning across the GTA." },
+      { property: "og:url", content: "https://suyusan-sparkle-solutions.lovable.app/pricing" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://suyusan-sparkle-solutions.lovable.app/pricing" },
     ],
   }),
 });
