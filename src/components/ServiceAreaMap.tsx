@@ -26,7 +26,7 @@ export function ServiceAreaMap({ className = "" }: { className?: string }) {
           {neighborhoods.map((n) => (
             <span
               key={n}
-              className="rounded-full border border-border bg-background px-2 sm:px-3 py-1 sm:py-1.5 text-xs font-medium text-foreground/80"
+              className="rounded-full border border-border bg-background px-2 sm:px-3 py-1 sm:py-1.5 text-xs font-medium text-foreground/90"
             >
               {n}
             </span>

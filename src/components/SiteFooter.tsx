@@ -56,7 +56,7 @@ export function SiteFooter() {
           <div className="flex flex-wrap gap-x-2 gap-y-1">
             {neighborhoods.slice(0, 12).map((n, i, arr) => (
               <span key={n} className="text-xs text-muted-foreground">
-                {n}{i < arr.length - 1 && <span className="ml-2 text-muted-foreground/40">·</span>}
+                {n}{i < arr.length - 1 && <span className="ml-2 text-muted-foreground/70">·</span>}
               </span>
             ))}
           </div>

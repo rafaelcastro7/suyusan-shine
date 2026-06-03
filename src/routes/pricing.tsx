@@ -62,7 +62,7 @@ function PricingPage() {
         <div className="relative overflow-hidden rounded-[2.5rem] bg-[var(--gradient-brand)] p-10 md:p-16 text-primary-foreground text-center">
           <div className="relative z-10 max-w-2xl mx-auto">
             <h2 className="font-display text-4xl md:text-5xl font-bold">Ready to book?</h2>
-            <p className="mt-4 text-primary-foreground/90 text-lg">Get your personalized quote in under a minute.</p>
+            <p className="mt-4 text-primary-foreground text-lg">Get your personalized quote in under a minute.</p>
             <Link to="/booking" className="mt-8 inline-flex items-center gap-2 rounded-full bg-background text-foreground px-6 py-3 text-sm font-semibold hover:opacity-90 transition">
               Book in 60s <ArrowRight className="h-4 w-4" />
             </Link>
