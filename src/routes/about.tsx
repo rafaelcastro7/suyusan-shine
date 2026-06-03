@@ -28,7 +28,7 @@ const values = [
 ];
 
 // Carousel: team photo + real Galeria shots for variety
-const teamPhotos = [team, "/Galeria/04.jpeg", "/Galeria/08.jpeg", office];
+const teamPhotos = [cleanOffice, team, "/Galeria/04.jpeg", "/Galeria/08.jpeg", office];
 
 function AboutPage() {
   return (
