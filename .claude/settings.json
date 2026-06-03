@@ -15,7 +15,8 @@
       "PowerShell(git checkout -- src/routeTree.gen.ts package.json)",
       "PowerShell(git add .gitignore)",
       "PowerShell(git commit -m \"chore: add e2e testing artifacts to gitignore\")",
-      "PowerShell(git push origin main)"
+      "PowerShell(git push origin main)",
+      "Bash(npm list *)"
     ],
     "additionalDirectories": [
       "\\dev",

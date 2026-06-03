@@ -1,7 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, CheckCircle2, ShieldCheck, Sparkles, Leaf, Clock } from "lucide-react";
+import { ArrowRight, CheckCircle2, ShieldCheck, Sparkles, Leaf, Clock, Star } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { FadeIn } from "@/components/FadeIn";
 import { services } from "@/data/services";
 import hero from "@/assets/hero.jpg";
 import team from "@/assets/team.jpg";
@@ -95,27 +96,112 @@ function Home() {
 
       {/* SERVICES */}
       <section className="mx-auto max-w-7xl px-5 lg:px-8 py-24">
-        <div className="flex items-end justify-between flex-wrap gap-6">
-          <div className="max-w-2xl">
-            <div className="text-xs uppercase tracking-[0.2em] text-primary font-semibold">What we do</div>
-            <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold tracking-tight">Cleaning services for every space</h2>
-            <p className="mt-4 text-muted-foreground">From recurring home upkeep to commercial contracts and overnight retirement-home shifts — one team, one standard.</p>
+        <FadeIn variant="fade-up">
+          <div className="flex items-end justify-between flex-wrap gap-6">
+            <div className="max-w-2xl">
+              <div className="text-xs uppercase tracking-[0.2em] text-primary font-semibold">What we do</div>
+              <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold tracking-tight">Cleaning services for every space</h2>
+              <p className="mt-4 text-muted-foreground">From recurring home upkeep to commercial contracts and overnight retirement-home shifts — one team, one standard.</p>
+            </div>
+            <Link to="/services" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3 transition-all">
+              View all services <ArrowRight className="h-4 w-4" />
+            </Link>
           </div>
-          <Link to="/services" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3 transition-all">
-            View all services <ArrowRight className="h-4 w-4" />
-          </Link>
-        </div>
+        </FadeIn>
 
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {services.slice(0, 6).map(({ slug, title, short, icon: Icon }) => (
-            <Link key={slug} to="/services" className="group relative rounded-3xl border border-border bg-card p-7 hover:shadow-[var(--shadow-soft)] hover:-translate-y-1 transition-all">
-              <div className="h-12 w-12 rounded-2xl bg-[var(--gradient-brand)] grid place-items-center text-primary-foreground"><Icon className="h-6 w-6" /></div>
-              <h3 className="mt-5 font-display text-xl font-semibold">{title}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">{short}</p>
-              <div className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-primary group-hover:gap-2 transition-all">
-                Learn more <ArrowRight className="h-4 w-4" />
+          {services.slice(0, 6).map(({ slug, title, short, icon: Icon }, idx) => (
+            <FadeIn key={slug} variant="fade-up" delay={idx * 75} className="group relative rounded-3xl border border-border bg-card p-7 hover:shadow-[var(--shadow-soft)] hover:-translate-y-1 transition-all">
+              <Link to="/services" className="block h-full">
+                <div className="h-12 w-12 rounded-2xl bg-[var(--gradient-brand)] grid place-items-center text-primary-foreground"><Icon className="h-6 w-6" /></div>
+                <h3 className="mt-5 font-display text-xl font-semibold">{title}</h3>
+                <p className="mt-2 text-sm text-muted-foreground">{short}</p>
+                <div className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-primary group-hover:gap-2 transition-all">
+                  Learn more <ArrowRight className="h-4 w-4" />
+                </div>
+              </Link>
+            </FadeIn>
+          ))}
+        </div>
+      </section>
+
+      {/* TESTIMONIALS */}
+      <section className="mx-auto max-w-7xl px-5 lg:px-8 py-24">
+        <FadeIn variant="fade-up">
+          <div className="text-xs uppercase tracking-[0.2em] text-primary font-semibold">Trusted by hundreds</div>
+          <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold tracking-tight">What our clients say</h2>
+        </FadeIn>
+
+        <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[
+            {
+              name: "Sarah Mitchell",
+              location: "Toronto, ON",
+              quote: "Suyusan transformed our office. The team is reliable, professional, and our space has never looked better. Highly recommend.",
+              stars: 5,
+            },
+            {
+              name: "James Chen",
+              location: "Mississauga, ON",
+              quote: "We've been using Suyusan for monthly deep cleans and they never disappoint. Same crew every time—that consistency is invaluable.",
+              stars: 5,
+            },
+            {
+              name: "Margaret Thompson",
+              location: "Oakville, ON",
+              quote: "My home is spotless after each visit. The eco-friendly products are perfect for my grandkids. Best cleaning service I've tried.",
+              stars: 5,
+            },
+          ].map((testimonial, idx) => (
+            <FadeIn key={testimonial.name} variant="fade-up" delay={idx * 100} className="rounded-3xl border border-border bg-card p-8">
+              <div className="flex gap-1">
+                {Array.from({ length: testimonial.stars }).map((_, i) => (
+                  <Star key={i} className="h-4 w-4 fill-brand-green text-brand-green" />
+                ))}
               </div>
+              <p className="mt-4 text-muted-foreground italic">"{testimonial.quote}"</p>
+              <div className="mt-6 pt-6 border-t border-border">
+                <div className="font-semibold text-foreground">{testimonial.name}</div>
+                <div className="text-xs text-muted-foreground">{testimonial.location}</div>
+              </div>
+            </FadeIn>
+          ))}
+        </div>
+      </section>
+
+      {/* GALLERY PREVIEW */}
+      <section className="mx-auto max-w-7xl px-5 lg:px-8 py-24">
+        <FadeIn variant="fade-up">
+          <div className="flex items-end justify-between flex-wrap gap-6 mb-12">
+            <div className="max-w-2xl">
+              <div className="text-xs uppercase tracking-[0.2em] text-primary font-semibold">Our work</div>
+              <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold tracking-tight">See the transformation</h2>
+              <p className="mt-4 text-muted-foreground">From sparkling kitchens to pristine offices, here's a glimpse of what we bring to every project.</p>
+            </div>
+            <Link to="/gallery" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3 transition-all">
+              View all photos <ArrowRight className="h-4 w-4" />
             </Link>
+          </div>
+        </FadeIn>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {[1, 2, 3, 4, 5, 6].map((id) => (
+            <FadeIn
+              key={id}
+              variant="fade-up"
+              delay={id * 50}
+              className="group cursor-pointer relative overflow-hidden rounded-2xl bg-card border border-border aspect-[4/3]"
+            >
+              <Link to="/gallery" className="block h-full">
+                <img
+                  src={`/Galeria/${String(id).padStart(2, '0')}.jpeg`}
+                  alt={`Suyusan cleaning project ${id}`}
+                  loading="lazy"
+                  className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
+              </Link>
+            </FadeIn>
           ))}
         </div>
       </section>

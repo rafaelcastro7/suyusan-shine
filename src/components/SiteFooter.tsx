@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram, Linkedin } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 export function SiteFooter() {
@@ -15,6 +15,14 @@ export function SiteFooter() {
             Professional residential and commercial cleaning services across Canada.
             Insured, bonded and committed to a spotless, healthier space.
           </p>
+          <div className="mt-4 flex gap-3">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-primary/10 hover:bg-primary/20 grid place-items-center transition" aria-label="Instagram">
+              <Instagram className="h-5 w-5 text-primary" />
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-primary/10 hover:bg-primary/20 grid place-items-center transition" aria-label="LinkedIn">
+              <Linkedin className="h-5 w-5 text-primary" />
+            </a>
+          </div>
         </div>
 
         <div>
@@ -22,6 +30,7 @@ export function SiteFooter() {
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li><Link to="/" className="hover:text-primary">Home</Link></li>
             <li><Link to="/services" className="hover:text-primary">Services</Link></li>
+            <li><Link to="/gallery" className="hover:text-primary">Gallery</Link></li>
             <li><Link to="/about" className="hover:text-primary">About</Link></li>
             <li><Link to="/contact" className="hover:text-primary">Contact</Link></li>
           </ul>
