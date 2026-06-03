@@ -20,6 +20,12 @@ dist-ssr
 .wrangler/
 .dev.vars
 
+# E2E Testing (Playwright)
+e2e.spec.ts
+screenshots/
+test-results/
+playwright.config.ts
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
