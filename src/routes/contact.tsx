@@ -19,8 +19,14 @@ export const Route = createFileRoute("/contact")({
   component: ContactPage,
   head: () => ({
     meta: [
-      { title: "Contact — Suyusan Solutions Inc." },
-      { name: "description", content: "Get a free quote for your home, office or retirement residence cleaning needs." },
+      { title: "Contact — Suyusan Solutions" },
+      { name: "description", content: "Get a free quote for your home, office or retirement residence cleaning. Reach our GTA team by phone, email or form." },
+      { property: "og:title", content: "Contact Suyusan Solutions" },
+      { property: "og:description", content: "Get a free GTA cleaning quote by phone, email or contact form." },
+      { property: "og:url", content: "https://suyusan-sparkle-solutions.lovable.app/contact" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://suyusan-sparkle-solutions.lovable.app/contact" },
     ],
   }),
 });

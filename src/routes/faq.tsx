@@ -11,8 +11,28 @@ export const Route = createFileRoute("/faq")({
   component: FAQPage,
   head: () => ({
     meta: [
-      { title: "FAQ — Suyusan Solutions Inc." },
-      { name: "description", content: "Answers to common questions about insurance, products, scheduling, pricing, pets and our service area across the GTA." },
+      { title: "FAQ — Suyusan Solutions" },
+      { name: "description", content: "Answers about insurance, products, scheduling, pricing, pets and our GTA service area." },
+      { property: "og:title", content: "FAQ — Suyusan Solutions" },
+      { property: "og:description", content: "Answers to common questions about our GTA cleaning services." },
+      { property: "og:url", content: "https://suyusan-sparkle-solutions.lovable.app/faq" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://suyusan-sparkle-solutions.lovable.app/faq" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((f) => ({
+            "@type": "Question",
+            name: f.question,
+            acceptedAnswer: { "@type": "Answer", text: f.answer },
+          })),
+        }),
+      },
     ],
   }),
 });

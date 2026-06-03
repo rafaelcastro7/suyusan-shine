@@ -17,11 +17,35 @@ export const Route = createFileRoute("/")({
   component: Home,
   head: () => ({
     meta: [
-      { title: "Suyusan Solutions Inc. — Professional Cleaning in Canada" },
-      { name: "description", content: "Residential and commercial cleaning services across the GTA — regular, deep, post-construction, senior care and retirement-home housekeeping. Book online in 60 seconds." },
+      { title: "Suyusan Solutions — GTA Cleaning Services" },
+      { name: "description", content: "Insured residential and commercial cleaning across the GTA — regular, deep, post-construction and retirement-home housekeeping. Book online in 60 seconds." },
+      { property: "og:title", content: "Suyusan Solutions — GTA Cleaning Services" },
+      { property: "og:description", content: "Insured residential and commercial cleaning across the GTA. Book online in 60 seconds." },
+      { property: "og:url", content: "https://suyusan-sparkle-solutions.lovable.app/" },
     ],
     links: [
       { rel: "preload", as: "image", href: hero, fetchpriority: "high" },
+      { rel: "canonical", href: "https://suyusan-sparkle-solutions.lovable.app/" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "Suyusan Solutions Inc.",
+          url: "https://suyusan-sparkle-solutions.lovable.app/",
+          telephone: "+1-416-555-0123",
+          areaServed: "Greater Toronto Area",
+          priceRange: "$$",
+          description: "Professional residential and commercial cleaning services across the Greater Toronto Area.",
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "ON",
+            addressCountry: "CA",
+          },
+        }),
+      },
     ],
   }),
 });

@@ -15,7 +15,13 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About — Suyusan Solutions Inc." },
-      { name: "description", content: "Suyusan Solutions Inc. is a Canadian cleaning company built on care, consistency and trust." },
+      { name: "description", content: "Meet Suyusan Solutions — a GTA cleaning company built on care, consistency and trained, background-checked crews." },
+      { property: "og:title", content: "About Suyusan Solutions Inc." },
+      { property: "og:description", content: "A GTA cleaning company built on care, consistency and trained crews." },
+      { property: "og:url", content: "https://suyusan-sparkle-solutions.lovable.app/about" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://suyusan-sparkle-solutions.lovable.app/about" },
     ],
   }),
 });

@@ -10,8 +10,14 @@ export const Route = createFileRoute("/services")({
   component: ServicesPage,
   head: () => ({
     meta: [
-      { title: "Cleaning Services — Suyusan Solutions Inc." },
-      { name: "description", content: "Regular, deep, post-construction, senior, commercial, move-in/out and retirement-home cleaning across Canada." },
+      { title: "Cleaning Services — Suyusan Solutions" },
+      { name: "description", content: "Regular, deep, post-construction, senior, commercial, move-in/out and retirement-home cleaning across the GTA." },
+      { property: "og:title", content: "Cleaning Services — Suyusan Solutions" },
+      { property: "og:description", content: "Residential, commercial and specialty cleaning across the GTA." },
+      { property: "og:url", content: "https://suyusan-sparkle-solutions.lovable.app/services" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://suyusan-sparkle-solutions.lovable.app/services" },
     ],
   }),
 });
