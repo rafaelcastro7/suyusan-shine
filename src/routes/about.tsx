@@ -66,7 +66,7 @@ function AboutPage() {
           {values.map(({ icon: Icon, title, text }, idx) => (
             <FadeIn key={title} variant="fade-up" delay={idx * 75} className="rounded-3xl border border-border bg-card p-7">
               <div className="h-12 w-12 rounded-2xl bg-primary/10 grid place-items-center"><Icon className="h-6 w-6 text-primary" /></div>
-              <h3 className="mt-5 font-display text-xl font-semibold">{title}</h3>
+              <h2 className="mt-5 font-display text-xl font-semibold">{title}</h2>
               <p className="mt-2 text-sm text-muted-foreground">{text}</p>
             </FadeIn>
           ))}
