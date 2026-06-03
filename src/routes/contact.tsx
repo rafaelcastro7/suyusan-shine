@@ -68,6 +68,9 @@ function ContactPage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-5 lg:px-8 py-20 grid lg:grid-cols-3 gap-10">
+        <div className="lg:col-span-3">
+          <h2 className="font-display text-3xl font-bold tracking-tight mb-8">Get in touch</h2>
+        </div>
         <FadeIn variant="fade-left" className="lg:col-span-2 rounded-3xl border border-border bg-card p-8 shadow-[var(--shadow-soft)]">
           {sent ? (
             <div className="text-center py-16 animate-fade-up">
@@ -169,6 +172,7 @@ function ContactPage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-5 lg:px-8 pb-24">
+        <h2 className="font-display text-3xl font-bold tracking-tight mb-8">Service area</h2>
         <FadeIn variant="fade-up">
           <ServiceAreaMap />
         </FadeIn>
