@@ -20,6 +20,9 @@ export const Route = createFileRoute("/")({
       { title: "Suyusan Solutions Inc. — Professional Cleaning in Canada" },
       { name: "description", content: "Residential and commercial cleaning services across the GTA — regular, deep, post-construction, senior care and retirement-home housekeeping. Book online in 60 seconds." },
     ],
+    links: [
+      { rel: "preload", as: "image", href: hero, fetchpriority: "high" },
+    ],
   }),
 });
 
