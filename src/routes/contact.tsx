@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -14,6 +15,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { services } from "@/data/services";
+import { useDocumentMeta } from "@/hooks/use-document-meta";
 
 export const Route = createFileRoute("/contact")({
   component: ContactPage,
@@ -31,24 +33,25 @@ export const Route = createFileRoute("/contact")({
   }),
 });
 
-const contactSchema = z.object({
-  name: z.string().min(2, "Name is required"),
-  email: z.string().email("Valid email required"),
-  phone: z.string().optional(),
-  service: z.string().min(1, "Please select a service"),
-  message: z.string().min(10, "Message must be at least 10 characters"),
-});
-
-type ContactFormData = z.infer<typeof contactSchema>;
-
 function ContactPage() {
+  const { t } = useTranslation();
+  useDocumentMeta("meta.contact.title", "meta.contact.description");
   const [sent, setSent] = useState(false);
+
+  const contactSchema = z.object({
+    name: z.string().min(2, t("contact.errors.nameRequired")),
+    email: z.string().email(t("contact.errors.emailValid")),
+    phone: z.string().optional(),
+    service: z.string().min(1, t("contact.errors.serviceRequired")),
+    message: z.string().min(10, t("contact.errors.messageMin")),
+  });
+  type ContactFormData = z.infer<typeof contactSchema>;
+
   const { register, handleSubmit, formState: { errors }, control, reset } = useForm<ContactFormData>({
     resolver: zodResolver(contactSchema),
   });
 
   const onSubmit = async (data: ContactFormData) => {
-    // Simulate form submission
     console.log("Form submitted:", data);
     setSent(true);
     setTimeout(() => {
@@ -64,18 +67,16 @@ function ContactPage() {
       <section className="bg-[var(--gradient-soft)] border-b border-border">
         <div className="mx-auto max-w-7xl px-5 lg:px-8 py-20 lg:py-28">
           <FadeIn variant="fade-up">
-            <div className="text-xs uppercase tracking-[0.2em] text-primary font-semibold">Contact</div>
-            <h1 className="mt-4 font-display text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight max-w-3xl">Let's get your space sparkling.</h1>
-            <p className="mt-5 text-lg text-muted-foreground max-w-2xl">
-              Tell us a bit about your needs and we'll reply with a free quote within one business day.
-            </p>
+            <div className="text-xs uppercase tracking-[0.2em] text-primary font-semibold">{t("contact.kicker")}</div>
+            <h1 className="mt-4 font-display text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight max-w-3xl">{t("contact.title")}</h1>
+            <p className="mt-5 text-lg text-muted-foreground max-w-2xl">{t("contact.lead")}</p>
           </FadeIn>
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-5 lg:px-8 py-20 grid lg:grid-cols-3 gap-10">
         <div className="lg:col-span-3">
-          <h2 className="font-display text-3xl font-bold tracking-tight mb-8">Get in touch</h2>
+          <h2 className="font-display text-3xl font-bold tracking-tight mb-8">{t("contact.getInTouch")}</h2>
         </div>
         <FadeIn variant="fade-left" className="lg:col-span-2 rounded-3xl border border-border bg-card p-8 shadow-[var(--shadow-soft)]">
           {sent ? (
@@ -83,44 +84,30 @@ function ContactPage() {
               <div className="mx-auto h-16 w-16 rounded-full bg-brand-green/30 grid place-items-center">
                 <CheckCircle2 className="h-8 w-8 text-primary animate-bounce" />
               </div>
-              <h2 className="mt-5 font-display text-2xl font-bold">Thank you!</h2>
-              <p className="mt-2 text-muted-foreground">We received your request and will be in touch within one business day.</p>
+              <h2 className="mt-5 font-display text-2xl font-bold">{t("contact.form.thanksTitle")}</h2>
+              <p className="mt-2 text-muted-foreground">{t("contact.form.thanksText")}</p>
             </div>
           ) : (
             <form onSubmit={handleSubmit(onSubmit)} className="grid sm:grid-cols-2 gap-5">
               <div>
-                <label className="text-sm font-medium">Full name</label>
-                <Input
-                  {...register("name")}
-                  className="mt-1.5"
-                  placeholder="Your name"
-                />
+                <label className="text-sm font-medium">{t("contact.form.name")}</label>
+                <Input {...register("name")} className="mt-1.5" placeholder={t("contact.form.namePlaceholder")} />
                 {errors.name && <p className="mt-1 text-xs text-red-500">{errors.name.message}</p>}
               </div>
 
               <div>
-                <label className="text-sm font-medium">Email</label>
-                <Input
-                  {...register("email")}
-                  type="email"
-                  className="mt-1.5"
-                  placeholder="your@email.com"
-                />
+                <label className="text-sm font-medium">{t("contact.form.email")}</label>
+                <Input {...register("email")} type="email" className="mt-1.5" placeholder={t("contact.form.emailPlaceholder")} />
                 {errors.email && <p className="mt-1 text-xs text-red-500">{errors.email.message}</p>}
               </div>
 
               <div>
-                <label className="text-sm font-medium">Phone</label>
-                <Input
-                  {...register("phone")}
-                  type="tel"
-                  className="mt-1.5"
-                  placeholder="(416) 555-0123"
-                />
+                <label className="text-sm font-medium">{t("contact.form.phone")}</label>
+                <Input {...register("phone")} type="tel" className="mt-1.5" placeholder={t("contact.form.phonePlaceholder")} />
               </div>
 
               <div>
-                <label className="text-sm font-medium">Service</label>
+                <label className="text-sm font-medium">{t("contact.form.service")}</label>
                 <Controller
                   name="service"
                   control={control}
@@ -128,12 +115,12 @@ function ContactPage() {
                   render={({ field }) => (
                     <Select value={field.value} onValueChange={field.onChange}>
                       <SelectTrigger className="mt-1.5">
-                        <SelectValue placeholder="Select a service…" />
+                        <SelectValue placeholder={t("contact.form.selectService")} />
                       </SelectTrigger>
                       <SelectContent>
                         {services.map((s) => (
                           <SelectItem key={s.slug} value={s.slug}>
-                            {s.title}
+                            {t(`services.items.${s.slug}.title`)}
                           </SelectItem>
                         ))}
                       </SelectContent>
@@ -144,19 +131,14 @@ function ContactPage() {
               </div>
 
               <div className="sm:col-span-2">
-                <label className="text-sm font-medium">Message</label>
-                <Textarea
-                  {...register("message")}
-                  className="mt-1.5"
-                  placeholder="Tell us about your space, square footage and preferred schedule…"
-                  rows={5}
-                />
+                <label className="text-sm font-medium">{t("contact.form.message")}</label>
+                <Textarea {...register("message")} className="mt-1.5" placeholder={t("contact.form.messagePlaceholder")} rows={5} />
                 {errors.message && <p className="mt-1 text-xs text-red-500">{errors.message.message}</p>}
               </div>
 
               <Button type="submit" className="sm:col-span-2 w-full">
                 <Send className="h-4 w-4 mr-2" />
-                Send request
+                {t("contact.form.send")}
               </Button>
             </form>
           )}
@@ -165,20 +147,20 @@ function ContactPage() {
         <FadeIn variant="fade-right" className="space-y-4">
           <div className="rounded-3xl border border-primary/30 bg-primary/5 p-6">
             <div className="h-11 w-11 rounded-xl bg-[var(--gradient-brand)] grid place-items-center"><CalendarCheck className="h-5 w-5 text-primary-foreground" /></div>
-            <div className="mt-4 font-semibold">Prefer to book instantly?</div>
-            <p className="mt-1 text-sm text-muted-foreground">Get a quote and reserve your slot in under 60 seconds.</p>
+            <div className="mt-4 font-semibold">{t("contact.info.instantBookTitle")}</div>
+            <p className="mt-1 text-sm text-muted-foreground">{t("contact.info.instantBookText")}</p>
             <Link to="/booking" className="mt-4 inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition">
-              Book in 60s
+              {t("common.bookIn60s")}
             </Link>
           </div>
-          <InfoCard icon={Phone} title="Call us" lines={["(416) 555-0123", "Mon–Sat, 8am–7pm"]} />
-          <InfoCard icon={Mail} title="Email" lines={["info@suyusansolutions.ca"]} />
-          <InfoCard icon={MapPin} title="Service area" lines={["Greater Toronto Area", "& surrounding regions"]} />
+          <InfoCard icon={Phone} title={t("contact.info.callTitle")} lines={["(416) 555-0123", t("contact.info.callHours")]} />
+          <InfoCard icon={Mail} title={t("contact.info.emailTitle")} lines={["info@suyusansolutions.ca"]} />
+          <InfoCard icon={MapPin} title={t("contact.info.areaTitle")} lines={[t("contact.info.areaLine1"), t("contact.info.areaLine2")]} />
         </FadeIn>
       </section>
 
       <section className="mx-auto max-w-7xl px-5 lg:px-8 pb-24">
-        <h2 className="font-display text-3xl font-bold tracking-tight mb-8">Service area</h2>
+        <h2 className="font-display text-3xl font-bold tracking-tight mb-8">{t("contact.serviceArea")}</h2>
         <FadeIn variant="fade-up">
           <ServiceAreaMap />
         </FadeIn>

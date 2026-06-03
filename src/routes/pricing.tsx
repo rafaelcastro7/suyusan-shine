@@ -1,11 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useTranslation } from "react-i18next";
 import { ArrowRight } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { FadeIn } from "@/components/FadeIn";
 import { PricingTable } from "@/components/PricingTable";
 import { FAQ } from "@/components/FAQ";
-import { faqs } from "@/data/faqs";
+import { faqIds } from "@/data/faqs";
+import { useDocumentMeta } from "@/hooks/use-document-meta";
 
 export const Route = createFileRoute("/pricing")({
   component: PricingPage,
@@ -23,12 +25,12 @@ export const Route = createFileRoute("/pricing")({
   }),
 });
 
-// Pricing-relevant FAQs
-const pricingFaqs = faqs.filter((f) =>
-  /pay|cancellation|guarantee|supplies/i.test(f.question)
-);
+const pricingFaqIds = ["pay", "cancellation", "guarantee", "supplies"] as const;
 
 function PricingPage() {
+  const { t } = useTranslation();
+  useDocumentMeta("meta.pricing.title", "meta.pricing.description");
+
   return (
     <div className="min-h-screen flex flex-col">
       <SiteHeader />
@@ -36,11 +38,9 @@ function PricingPage() {
       <section className="bg-[var(--gradient-soft)] border-b border-border">
         <div className="mx-auto max-w-7xl px-5 lg:px-8 py-20 lg:py-28 text-center">
           <FadeIn variant="fade-up">
-            <div className="text-xs uppercase tracking-[0.2em] text-primary font-semibold">Pricing</div>
-            <h1 className="mt-4 font-display text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight">Simple, transparent pricing</h1>
-            <p className="mt-5 text-lg text-muted-foreground max-w-2xl mx-auto">
-              No hidden fees. See your starting rate up front, then book online in 60 seconds with an instant quote.
-            </p>
+            <div className="text-xs uppercase tracking-[0.2em] text-primary font-semibold">{t("pricing.kicker")}</div>
+            <h1 className="mt-4 font-display text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight">{t("pricing.title")}</h1>
+            <p className="mt-5 text-lg text-muted-foreground max-w-2xl mx-auto">{t("pricing.lead")}</p>
           </FadeIn>
         </div>
       </section>
@@ -48,18 +48,18 @@ function PricingPage() {
       <section className="mx-auto max-w-7xl px-5 lg:px-8 py-20">
         <PricingTable />
         <FadeIn variant="fade-up" className="mt-12 text-center text-sm text-muted-foreground">
-          Final price depends on home size and frequency. Recurring service saves up to 20%.{" "}
-          <Link to="/booking" className="font-semibold text-primary hover:underline">Get your exact quote →</Link>
+          {t("pricing.footnote")}{" "}
+          <Link to="/booking" className="font-semibold text-primary hover:underline">{t("pricing.getExact")}</Link>
         </FadeIn>
       </section>
 
       <section className="bg-[var(--gradient-soft)] border-y border-border">
         <div className="mx-auto max-w-3xl px-5 lg:px-8 py-20">
           <FadeIn variant="fade-up">
-            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight text-center">Pricing questions</h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight text-center">{t("pricing.faqTitle")}</h2>
           </FadeIn>
           <FadeIn variant="fade-up" delay={100} className="mt-8">
-            <FAQ items={pricingFaqs} />
+            <FAQ items={pricingFaqIds} />
           </FadeIn>
         </div>
       </section>
@@ -67,10 +67,10 @@ function PricingPage() {
       <section className="mx-auto max-w-7xl px-5 lg:px-8 py-24">
         <div className="relative overflow-hidden rounded-[2.5rem] bg-[var(--gradient-brand)] p-10 md:p-16 text-primary-foreground text-center">
           <div className="relative z-10 max-w-2xl mx-auto">
-            <h2 className="font-display text-4xl md:text-5xl font-bold">Ready to book?</h2>
-            <p className="mt-4 text-primary-foreground text-lg">Get your personalized quote in under a minute.</p>
+            <h2 className="font-display text-4xl md:text-5xl font-bold">{t("pricing.cta.title")}</h2>
+            <p className="mt-4 text-primary-foreground text-lg">{t("pricing.cta.text")}</p>
             <Link to="/booking" className="mt-8 inline-flex items-center gap-2 rounded-full bg-background text-foreground px-6 py-3 text-sm font-semibold hover:opacity-90 transition">
-              Book in 60s <ArrowRight className="h-4 w-4" />
+              {t("common.bookIn60s")} <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
         </div>
