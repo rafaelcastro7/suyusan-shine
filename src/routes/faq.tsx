@@ -26,7 +26,7 @@ function FAQPage() {
         <div className="mx-auto max-w-7xl px-5 lg:px-8 py-20 lg:py-28">
           <FadeIn variant="fade-up">
             <div className="text-xs uppercase tracking-[0.2em] text-primary font-semibold">Help center</div>
-            <h1 className="mt-4 font-display text-5xl md:text-6xl font-bold tracking-tight max-w-3xl">Frequently asked questions</h1>
+            <h1 className="mt-4 font-display text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight max-w-3xl">Frequently asked questions</h1>
             <p className="mt-5 text-lg text-muted-foreground max-w-2xl">
               Everything you need to know about working with Suyusan. Can't find your answer? Just reach out.
             </p>

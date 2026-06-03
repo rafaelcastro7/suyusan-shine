@@ -44,7 +44,7 @@ function ServicesPage() {
         <div className="mx-auto max-w-7xl px-5 lg:px-8 py-20 lg:py-28">
           <FadeIn variant="fade-up">
             <div className="text-xs uppercase tracking-[0.2em] text-primary font-semibold">Services</div>
-            <h1 className="mt-4 font-display text-5xl md:text-6xl font-bold tracking-tight max-w-3xl">Cleaning solutions for every kind of space</h1>
+            <h1 className="mt-4 font-display text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight max-w-3xl">Cleaning solutions for every kind of space</h1>
             <p className="mt-5 text-lg text-muted-foreground max-w-2xl">
               One trusted team, one consistent standard — from a single recurring home visit to multi-shift housekeeping at a retirement residence.
             </p>

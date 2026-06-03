@@ -26,7 +26,8 @@ const values = [
   { icon: Leaf, title: "Sustainability", text: "Low-VOC, biodegradable products that protect your home and our planet." },
 ];
 
-const teamPhotos = [team, office, team]; // Carousel with team photos
+// Carousel: team photo + real Galeria shots for variety
+const teamPhotos = [team, "/Galeria/04.jpeg", "/Galeria/08.jpeg", office];
 
 function AboutPage() {
   return (
@@ -37,14 +38,14 @@ function AboutPage() {
         <div className="mx-auto max-w-7xl px-5 lg:px-8 py-20 lg:py-28 grid lg:grid-cols-2 gap-12 items-center">
           <FadeIn variant="fade-right">
             <div className="text-xs uppercase tracking-[0.2em] text-primary font-semibold">About us</div>
-            <h1 className="mt-4 font-display text-5xl md:text-6xl font-bold tracking-tight">Cleaning, with care behind every detail.</h1>
+            <h1 className="mt-4 font-display text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight">Cleaning, with care behind every detail.</h1>
             <p className="mt-5 text-lg text-muted-foreground">
               Suyusan Solutions Inc. is a Canadian cleaning company built on a simple idea: a clean space changes how you feel in it.
               From a single home to a 200-suite retirement residence, our promise is the same — show up, do it right, and leave it better than we found it.
             </p>
           </FadeIn>
           <FadeIn variant="fade-left">
-            <img src={team} alt="The Suyusan Solutions team" width={1400} height={1000} loading="lazy" className="rounded-[2rem] shadow-[var(--shadow-soft)] object-cover aspect-[4/3]" />
+            <img src="/Galeria/06.jpeg" alt="Suyusan Solutions professional cleaning at work" width={1400} height={1000} loading="lazy" className="rounded-[2rem] shadow-[var(--shadow-soft)] object-cover aspect-[4/3]" />
           </FadeIn>
         </div>
       </section>

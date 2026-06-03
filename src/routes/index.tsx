@@ -31,12 +31,12 @@ function Home() {
       {/* HERO */}
       <section className="relative overflow-hidden">
         <div className="gradient-mesh" />
-        <div className="mx-auto max-w-7xl px-5 lg:px-8 pt-16 lg:pt-24 pb-20 grid lg:grid-cols-2 gap-12 items-center">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8 pt-16 lg:pt-24 pb-20 grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
           <div>
             <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background/70 backdrop-blur px-3 py-1 text-xs font-medium text-foreground/70">
               <span className="h-2 w-2 rounded-full bg-brand-green animate-pulse" /> Now booking across the GTA
             </div>
-            <h1 className="mt-6 font-display text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.02] tracking-tight">
+            <h1 className="mt-6 font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.02] tracking-tight">
               <Reveal
                 lines={[
                   "A spotless space.",
@@ -57,7 +57,7 @@ function Home() {
                 See pricing
               </Link>
             </div>
-            <div className="mt-10 grid grid-cols-3 gap-6 max-w-md">
+            <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-md">
               <StatCounter value={500} suffix="+" label="Homes cleaned" />
               <StatCounter value={4.9} decimals={1} suffix="★" label="Client rating" />
               <StatCounter value={100} suffix="%" label="Satisfaction" />

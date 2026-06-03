@@ -87,7 +87,7 @@ export function BookingWizard() {
   return (
     <div className="rounded-[var(--radius-bento)] border border-border bg-card p-6 md:p-8 shadow-[var(--shadow-soft)]">
       {/* Progress */}
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-1 sm:gap-2">
         {steps.map((label, i) => {
           const hidden = isCommercial && (i === 1 || i === 2);
           return (
@@ -224,7 +224,7 @@ export function BookingWizard() {
       </div>
 
       {/* Live quote + navigation */}
-      <div className="mt-8 flex flex-wrap items-center justify-between gap-4 border-t border-border pt-6">
+      <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4 border-t border-border pt-6">
         <div>
           {!isCommercial && quote > 0 ? (
             <div>

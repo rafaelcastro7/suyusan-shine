@@ -31,7 +31,7 @@ function PricingPage() {
         <div className="mx-auto max-w-7xl px-5 lg:px-8 py-20 lg:py-28 text-center">
           <FadeIn variant="fade-up">
             <div className="text-xs uppercase tracking-[0.2em] text-primary font-semibold">Pricing</div>
-            <h1 className="mt-4 font-display text-5xl md:text-6xl font-bold tracking-tight">Simple, transparent pricing</h1>
+            <h1 className="mt-4 font-display text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight">Simple, transparent pricing</h1>
             <p className="mt-5 text-lg text-muted-foreground max-w-2xl mx-auto">
               No hidden fees. See your starting rate up front, then book online in 60 seconds with an instant quote.
             </p>

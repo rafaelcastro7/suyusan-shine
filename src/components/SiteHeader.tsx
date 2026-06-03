@@ -56,7 +56,7 @@ export function SiteHeader() {
 
         <div className="flex items-center gap-2 lg:hidden">
           <ThemeToggle />
-          <button className="p-2" onClick={() => setOpen((v) => !v)} aria-label="Menu">
+          <button className="p-3" onClick={() => setOpen((v) => !v)} aria-label="Menu">
             {open ? <X /> : <Menu />}
           </button>
         </div>
