@@ -1,0 +1,517 @@
+{
+  "language": { "label": "Language" },
+  "nav": {
+    "services": "Services",
+    "pricing": "Pricing",
+    "gallery": "Gallery",
+    "about": "About",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "bookCta": "Book in 60s",
+    "menu": "Menu"
+  },
+  "footer": {
+    "tagline": "Professional residential and commercial cleaning services across the GTA. Insured, bonded and committed to a spotless, healthier space.",
+    "explore": "Explore",
+    "getStarted": "Get started",
+    "requestQuote": "Request a quote",
+    "contact": "Contact",
+    "serviceAreas": "Service areas",
+    "rights": "All rights reserved.",
+    "insured": "Insured & Bonded · Serving the GTA"
+  },
+  "common": {
+    "from": "from",
+    "back": "Back",
+    "continue": "Continue",
+    "bookIn60s": "Book in 60s",
+    "seePricing": "See pricing",
+    "requestQuote": "Request quote",
+    "bookNow": "Book now",
+    "close": "Close",
+    "prev": "Previous",
+    "next": "Next"
+  },
+  "meta": {
+    "home": {
+      "title": "Suyusan Solutions — GTA Cleaning Services",
+      "description": "Insured residential and commercial cleaning across the GTA — regular, deep, post-construction and retirement-home housekeeping. Book online in 60 seconds.",
+      "ogTitle": "Suyusan Solutions — GTA Cleaning Services",
+      "ogDescription": "Insured residential and commercial cleaning across the GTA. Book online in 60 seconds."
+    },
+    "about": {
+      "title": "About — Suyusan Solutions Inc.",
+      "description": "Meet Suyusan Solutions — a GTA cleaning company built on care, consistency and trained, background-checked crews.",
+      "ogTitle": "About Suyusan Solutions Inc.",
+      "ogDescription": "A GTA cleaning company built on care, consistency and trained crews."
+    },
+    "services": {
+      "title": "Cleaning Services — Suyusan Solutions",
+      "description": "Regular, deep, post-construction, senior, commercial, move-in/out and retirement-home cleaning across the GTA.",
+      "ogTitle": "Cleaning Services — Suyusan Solutions",
+      "ogDescription": "Residential, commercial and specialty cleaning across the GTA."
+    },
+    "pricing": {
+      "title": "Pricing — Suyusan Solutions",
+      "description": "Transparent cleaning prices. Starting rates for home cleaning, deep cleans and custom commercial quotes across the GTA.",
+      "ogTitle": "Pricing — Suyusan Solutions",
+      "ogDescription": "Transparent starting rates for residential and commercial cleaning across the GTA."
+    },
+    "gallery": {
+      "title": "Gallery — Suyusan Solutions",
+      "description": "Photos of our cleaning work across homes, offices and retirement residences in the GTA.",
+      "ogTitle": "Gallery — Suyusan Solutions",
+      "ogDescription": "Photos of our residential, commercial and senior-care cleaning work."
+    },
+    "faq": {
+      "title": "FAQ — Suyusan Solutions",
+      "description": "Answers about insurance, products, scheduling, pricing, pets and our GTA service area.",
+      "ogTitle": "FAQ — Suyusan Solutions",
+      "ogDescription": "Answers to common questions about our GTA cleaning services."
+    },
+    "contact": {
+      "title": "Contact — Suyusan Solutions",
+      "description": "Get a free quote for your home, office or retirement residence cleaning. Reach our GTA team by phone, email or form.",
+      "ogTitle": "Contact Suyusan Solutions",
+      "ogDescription": "Get a free GTA cleaning quote by phone, email or contact form."
+    },
+    "booking": {
+      "title": "Book Online — Suyusan Solutions",
+      "description": "Book your cleaning in under 60 seconds. Pick service, size and schedule, and get an instant quote.",
+      "ogTitle": "Book Online — Suyusan Solutions",
+      "ogDescription": "Book your cleaning in 60 seconds and get an instant quote."
+    }
+  },
+  "home": {
+    "heroBadge": "Now booking across the GTA",
+    "heroLine1": "A spotless space.",
+    "heroLine2": "A clearer mind.",
+    "heroLead": "Suyusan Solutions Inc. delivers dependable, detail-obsessed cleaning for homes, offices and retirement residences. Insured, bonded and trained — book online in 60 seconds.",
+    "stats": {
+      "homes": "Homes cleaned",
+      "rating": "Client rating",
+      "satisfaction": "Satisfaction"
+    },
+    "ecoBadge": "Eco-friendly products",
+    "ecoBadgeText": "Safe for kids & pets",
+    "trust": {
+      "insured": "Insured & bonded",
+      "insuredText": "Full liability coverage",
+      "trained": "Trained crews",
+      "trainedText": "Background-checked staff",
+      "eco": "Eco products",
+      "ecoText": "Low-VOC, family-safe",
+      "ontime": "On-time service",
+      "ontimeText": "Reliable scheduling"
+    },
+    "bento": {
+      "kicker": "What we do",
+      "title": "Cleaning services for every space",
+      "lead": "From recurring home upkeep to commercial contracts and overnight retirement-home shifts — one team, one standard.",
+      "viewAll": "View all services",
+      "featureTitle": "Whole-home deep cleans",
+      "featureText": "Top-to-bottom resets that reach everything regular service doesn't.",
+      "exploreDeep": "Explore deep cleaning",
+      "ctaTitle": "Not sure what you need?",
+      "ctaText": "Get a free quote in under a minute."
+    },
+    "how": {
+      "kicker": "How it works",
+      "title": "Cleaning in three simple steps",
+      "step1Title": "Book online",
+      "step1Text": "Pick your service, size and schedule in under 60 seconds — get an instant quote.",
+      "step2Title": "We clean",
+      "step2Text": "Your trusted, background-checked crew arrives on time with eco-friendly products.",
+      "step3Title": "You relax",
+      "step3Text": "Come home to a spotless space — backed by our 100% satisfaction guarantee."
+    },
+    "pricingPreview": {
+      "kicker": "Transparent pricing",
+      "title": "Simple, upfront rates",
+      "lead": "No hidden fees, no surprises. See what you'll pay before you book."
+    },
+    "testimonials": {
+      "kicker": "Trusted by hundreds",
+      "title": "What our clients say"
+    },
+    "gallery": {
+      "kicker": "Our work",
+      "title": "See the transformation",
+      "viewAll": "View all photos"
+    },
+    "faqPreview": {
+      "kicker": "Questions",
+      "title": "Frequently asked",
+      "viewAll": "See all FAQs"
+    },
+    "cta": {
+      "title": "Ready for a cleaner space?",
+      "text": "Book online in under a minute, or tell us about your facility and we'll send a free quote within one business day.",
+      "call": "Call (416) 555-0123"
+    }
+  },
+  "about": {
+    "kicker": "About us",
+    "title": "Cleaning, with care behind every detail.",
+    "lead": "Suyusan Solutions Inc. is a Canadian cleaning company built on a simple idea: a clean space changes how you feel in it. From a single home to a 200-suite retirement residence, our promise is the same — show up, do it right, and leave it better than we found it.",
+    "stats": {
+      "homes": "Homes & offices cleaned",
+      "rating": "Average client rating",
+      "regions": "GTA regions served",
+      "satisfaction": "Satisfaction guarantee"
+    },
+    "values": {
+      "care": { "title": "Care", "text": "We treat every space — and the people in it — like our own family's." },
+      "standards": { "title": "Standards", "text": "Documented checklists, supervised crews and a 100% satisfaction guarantee." },
+      "people": { "title": "People-first", "text": "Fair wages, training and respect for every member of our team." },
+      "sustainability": { "title": "Sustainability", "text": "Low-VOC, biodegradable products that protect your home and our planet." }
+    },
+    "why": {
+      "kicker": "Why Suyusan",
+      "title": "Built for homes, scaled for facilities.",
+      "text": "We started with residential clients and grew into commercial contracts and retirement-home housekeeping because our clients kept asking us to. That same residential attention to detail is what we bring to every commercial space we service.",
+      "cta": "Work with us"
+    }
+  },
+  "services": {
+    "kicker": "Services",
+    "title": "Cleaning solutions for every kind of space",
+    "lead": "One trusted team, one consistent standard — from a single recurring home visit to multi-shift housekeeping at a retirement residence.",
+    "categories": {
+      "all": "All Services",
+      "residential": "Residential",
+      "commercial": "Commercial",
+      "specialty": "Specialty"
+    },
+    "serviceLabel": "Service",
+    "requestService": "Request this service",
+    "cta": {
+      "title": "Found the right service?",
+      "text": "Book online in 60 seconds with an instant quote, or see transparent pricing first."
+    },
+    "items": {
+      "regular-cleaning": {
+        "title": "Regular Cleaning",
+        "short": "Weekly, bi-weekly or monthly upkeep that keeps your home consistently fresh.",
+        "description": "Our recurring cleaning service is designed to maintain a healthy, tidy and welcoming home with predictable visits and a trusted team. Each visit follows a detailed checklist covering dusting, vacuuming, mopping, kitchen and bathroom sanitation so you never come home to a long to-do list.",
+        "bullets": [
+          "Dusting of all reachable surfaces, baseboards and décor",
+          "Kitchen counters, sink, stovetop and exterior of appliances",
+          "Bathrooms: tubs, showers, toilets, mirrors and fixtures",
+          "Vacuum and mop all floors; trash and recycling out"
+        ]
+      },
+      "deep-cleaning": {
+        "title": "Deep / Seasonal Cleaning",
+        "short": "A top-to-bottom reset for spring, fall or whenever your home needs it most.",
+        "description": "A meticulous, room-by-room deep clean that addresses everything regular service doesn't routinely reach. Ideal for spring refresh, holiday prep or restoring a home that hasn't been cleaned in a while.",
+        "bullets": [
+          "Inside windows, tracks, sills and blinds",
+          "Detailed scrubbing of grout, tile and tough buildup",
+          "Light fixtures, ceiling fans, vents and door frames",
+          "Hand-wipe of cabinet exteriors and high-touch surfaces"
+        ]
+      },
+      "post-construction": {
+        "title": "Post-Renovation & Post-Construction",
+        "short": "Removing dust, debris and residue so your renovated space is move-in ready.",
+        "description": "Construction creates fine dust that settles into every corner. Our crews handle multi-stage cleaning — rough, final and touch-up — using HEPA vacuums and the right products to leave the project gallery-ready.",
+        "bullets": [
+          "HEPA vacuum of floors, walls, vents and fixtures",
+          "Removal of paint splatter, adhesive and stickers",
+          "Polish of glass, mirrors, stainless steel and chrome",
+          "Final detail pass before client walkthrough"
+        ]
+      },
+      "senior-cleaning": {
+        "title": "Cleaning for Seniors",
+        "short": "Compassionate, reliable cleaning tailored to the needs of older adults.",
+        "description": "A respectful, low-disruption service designed for seniors aging in place. Our trained team is patient, communicates clearly and uses gentle, low-fume products so the home stays safe, comfortable and easy to navigate.",
+        "bullets": [
+          "Slip and trip-hazard reduction (rugs, cords, clutter)",
+          "Sanitation of grab bars, mobility aids and high-touch areas",
+          "Laundry and linen change available",
+          "Same crew each visit — familiar, trusted faces"
+        ]
+      },
+      "appliances": {
+        "title": "Cleaning Including Appliances",
+        "short": "Add-on detail of your oven, fridge, microwave and laundry units.",
+        "description": "An add-on or stand-alone service for the appliances that need real time and product to clean properly. We degrease, descale and disinfect the surfaces you use every day.",
+        "bullets": [
+          "Inside oven, racks and stovetop hood",
+          "Inside refrigerator and freezer (food temporarily relocated)",
+          "Microwave, dishwasher and small appliances",
+          "Washer & dryer drum, gasket and lint system"
+        ]
+      },
+      "staging": {
+        "title": "Staging Cleaning",
+        "short": "Picture-perfect detail to support your real-estate staging.",
+        "description": "A detail-driven clean coordinated with stagers, photographers and realtors. Buyers notice everything — we make sure they only notice the right things.",
+        "bullets": [
+          "Streak-free glass, mirrors and stainless",
+          "Touch-up between showings on request",
+          "Coordinated scheduling with your stager",
+          "Quiet, discreet on-site presence"
+        ]
+      },
+      "commercial-office": {
+        "title": "Commercial & Office Cleaning",
+        "short": "After-hours office cleaning that keeps your team healthy and productive.",
+        "description": "Customizable janitorial programs for offices, clinics, studios and retail. We work around your hours, follow documented checklists and provide a single point of contact for accountability.",
+        "bullets": [
+          "Workstations, meeting rooms, kitchens and washrooms",
+          "Restocking of paper goods, soap and supplies",
+          "Floor care: vacuum, mop, buff and periodic deep cycles",
+          "Daily, evening or weekend schedules"
+        ]
+      },
+      "move-in-out": {
+        "title": "Move-In / Move-Out Cleaning",
+        "short": "A spotless handover for tenants, owners, landlords and property managers.",
+        "description": "We get the property ready for the next chapter. Built to satisfy lease and sale requirements, our move-in/move-out package is comprehensive and documented.",
+        "bullets": [
+          "Inside cabinets, drawers, closets and pantries",
+          "Detailed appliance interior cleaning",
+          "Walls spot-cleaned, baseboards and trim wiped",
+          "Final inspection-ready finish"
+        ]
+      },
+      "retirement-housekeeping": {
+        "title": "Retirement Home Housekeeping",
+        "short": "Day & night-shift housekeeping support for retirement residences.",
+        "description": "Reliable contracted housekeeping for retirement communities. Our staff is trained on infection-control basics, resident-first communication and the operational rhythm of long-term care environments.",
+        "bullets": [
+          "Resident suites, common rooms and dining areas",
+          "Day and overnight shift coverage available",
+          "PPE, log sheets and supervisor reporting",
+          "Background-checked, uniformed team"
+        ]
+      }
+    }
+  },
+  "pricing": {
+    "kicker": "Pricing",
+    "title": "Simple, transparent pricing",
+    "lead": "No hidden fees. See your starting rate up front, then book online in 60 seconds with an instant quote.",
+    "footnote": "Final price depends on home size and frequency. Recurring service saves up to 20%.",
+    "getExact": "Get your exact quote →",
+    "faqTitle": "Pricing questions",
+    "mostPopular": "Most popular",
+    "customQuote": "Custom quote",
+    "cta": { "title": "Ready to book?", "text": "Get your personalized quote in under a minute." },
+    "tiers": {
+      "home": {
+        "name": "Home Cleaning",
+        "tagline": "Recurring upkeep for houses & condos",
+        "unit": "per visit",
+        "features": [
+          "Weekly, bi-weekly or monthly",
+          "Same trusted crew every visit",
+          "Kitchen, bathrooms, floors & dusting",
+          "Eco-friendly products included",
+          "100% satisfaction guarantee"
+        ]
+      },
+      "deep": {
+        "name": "Deep Clean",
+        "tagline": "Top-to-bottom seasonal reset",
+        "unit": "per clean",
+        "features": [
+          "Everything in Home Cleaning",
+          "Inside windows, tracks & blinds",
+          "Grout, tile & buildup scrubbing",
+          "Light fixtures, vents & door frames",
+          "Cabinet exteriors hand-wiped"
+        ]
+      },
+      "commercial": {
+        "name": "Commercial",
+        "tagline": "Offices, clinics & retirement homes",
+        "unit": "custom quote",
+        "features": [
+          "Custom janitorial programs",
+          "Day, evening or weekend schedules",
+          "Insured, bonded & background-checked",
+          "Single point of contact",
+          "Supply restocking available"
+        ]
+      }
+    },
+    "sizes": {
+      "studio": "Studio / 1 bed",
+      "2bed": "2 bedrooms",
+      "3bed": "3 bedrooms",
+      "4bed": "4 bedrooms",
+      "5plus": "5+ bedrooms"
+    },
+    "frequencies": {
+      "once": "One-time",
+      "monthly": "Monthly",
+      "biweekly": "Bi-weekly",
+      "weekly": "Weekly",
+      "save": "Save {{percent}}%"
+    }
+  },
+  "gallery": {
+    "kicker": "Gallery",
+    "title": "Our work speaks for itself",
+    "lead": "From sparkling kitchens to pristine office spaces, here's a glimpse of the transformation we bring to every project.",
+    "imageAlt": "Professional cleaning service {{n}}"
+  },
+  "faq": {
+    "kicker": "Help center",
+    "title": "Frequently asked questions",
+    "lead": "Everything you need to know about working with Suyusan. Can't find your answer? Just reach out.",
+    "stillTitle": "Still have questions?",
+    "stillText": "Our team is happy to help you find the right service.",
+    "contactUs": "Contact us",
+    "items": {
+      "insured": {
+        "q": "Are you insured and bonded?",
+        "a": "Yes. Suyusan Solutions Inc. carries full liability insurance and is bonded. Every cleaner is background-checked and trained before stepping into your space, so you're fully protected on every visit."
+      },
+      "supplies": {
+        "q": "Do I need to provide cleaning supplies or equipment?",
+        "a": "No. We arrive fully equipped with professional-grade tools and eco-friendly, low-VOC products that are safe for kids and pets. If you prefer we use your own products, just let us know."
+      },
+      "sameCleaner": {
+        "q": "Will I get the same cleaner each time?",
+        "a": "Whenever possible, yes. We assign the same trusted crew to your recurring visits so they learn your preferences and your space is never in unfamiliar hands."
+      },
+      "guarantee": {
+        "q": "What is your satisfaction guarantee?",
+        "a": "If you're not happy with any area we cleaned, let us know within 24 hours and we'll return to re-clean it at no extra charge. Your satisfaction is 100% guaranteed."
+      },
+      "pay": {
+        "q": "How do I pay?",
+        "a": "We accept credit card, e-transfer and invoicing for commercial accounts. Payment is collected after each completed visit — no large upfront deposits for residential service."
+      },
+      "cancellation": {
+        "q": "What is your cancellation policy?",
+        "a": "You can reschedule or cancel up to 24 hours before your appointment at no charge. Cancellations inside 24 hours may incur a small fee to cover our crew's reserved time."
+      },
+      "pets": {
+        "q": "Do you clean if I have pets?",
+        "a": "Absolutely. Our products are pet-safe and our crews are comfortable around animals. Just let us know about your pets when you book so we can plan accordingly."
+      },
+      "areas": {
+        "q": "Which areas do you serve?",
+        "a": "We serve the Greater Toronto Area and surrounding regions, including Toronto, Mississauga, Oakville, Vaughan, Markham, Richmond Hill and Brampton. Not sure if we reach you? Just ask."
+      },
+      "home": {
+        "q": "Do I need to be home during the cleaning?",
+        "a": "Not at all. Many clients provide a key or entry code. Our bonded, background-checked crews are trusted in hundreds of homes and businesses across the GTA every week."
+      },
+      "advance": {
+        "q": "How far in advance should I book?",
+        "a": "For recurring service we recommend booking a few days ahead. For deep cleans and move-in/move-out, 3–5 days notice helps us reserve the right crew and time. Need it sooner? We'll do our best."
+      }
+    }
+  },
+  "contact": {
+    "kicker": "Contact",
+    "title": "Let's get your space sparkling.",
+    "lead": "Tell us a bit about your needs and we'll reply with a free quote within one business day.",
+    "getInTouch": "Get in touch",
+    "serviceArea": "Service area",
+    "form": {
+      "name": "Full name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "phone": "Phone",
+      "phonePlaceholder": "(416) 555-0123",
+      "service": "Service",
+      "selectService": "Select a service…",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your space, square footage and preferred schedule…",
+      "send": "Send request",
+      "thanksTitle": "Thank you!",
+      "thanksText": "We received your request and will be in touch within one business day."
+    },
+    "errors": {
+      "nameRequired": "Name is required",
+      "emailValid": "Valid email required",
+      "serviceRequired": "Please select a service",
+      "messageMin": "Message must be at least 10 characters"
+    },
+    "info": {
+      "instantBookTitle": "Prefer to book instantly?",
+      "instantBookText": "Get a quote and reserve your slot in under 60 seconds.",
+      "callTitle": "Call us",
+      "callHours": "Mon–Sat, 8am–7pm",
+      "emailTitle": "Email",
+      "areaTitle": "Service area",
+      "areaLine1": "Greater Toronto Area",
+      "areaLine2": "& surrounding regions"
+    }
+  },
+  "booking": {
+    "kicker": "Book online",
+    "title": "Your clean, booked in 60 seconds",
+    "lead": "Answer a few quick questions and get an instant estimate — no phone call required.",
+    "steps": {
+      "service": "Service",
+      "size": "Size",
+      "frequency": "Frequency",
+      "schedule": "Schedule",
+      "details": "Details"
+    },
+    "q": {
+      "service": "What do you need cleaned?",
+      "size": "How big is your space?",
+      "frequency": "How often?",
+      "schedule": "Pick a preferred date",
+      "details": "Almost done — your details"
+    },
+    "preferredDate": "Preferred date",
+    "scheduleHint": "We'll confirm the exact time window when we call you back.",
+    "fullName": "Full name",
+    "fullNamePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "you@email.com",
+    "phone": "Phone",
+    "phonePlaceholder": "(416) 555-0123",
+    "estimatedQuote": "Estimated quote",
+    "perVisit": "/ visit",
+    "perClean": "/ clean",
+    "commercialQuote": "Custom commercial quote — we'll call you back",
+    "selectToSee": "Select options to see your estimate",
+    "confirm": "Confirm booking",
+    "successTitle": "Booking request received!",
+    "successText": "Thanks {{name}}! We'll confirm your {{tier}} appointment{{date}} within one business day.",
+    "successDate": " for {{date}}",
+    "successQuote": " Your estimated quote is {{quote}}."
+  },
+  "serviceArea": {
+    "kicker": "Where we clean",
+    "title": "Serving the Greater Toronto Area",
+    "text": "We bring the same trusted crews and consistent standard across the GTA and surrounding regions.",
+    "mapTitle": "Suyusan Solutions service area — Greater Toronto Area"
+  },
+  "testimonials": {
+    "sarah": { "service": "Commercial & Office", "quote": "Suyusan transformed our office. The team is reliable, professional, and our space has never looked better. Highly recommend to any business in the GTA." },
+    "james": { "service": "Deep Cleaning", "quote": "We've been using Suyusan for monthly deep cleans and they never disappoint. Same crew every time — that consistency is invaluable." },
+    "margaret": { "service": "Regular Cleaning", "quote": "My home is spotless after each visit. The eco-friendly products are perfect for my grandkids. Best cleaning service I've tried in years." },
+    "david": { "service": "Move-In / Move-Out", "quote": "Booked a move-out clean and got my full deposit back. The place looked better than when I moved in. Fast, thorough and fairly priced." },
+    "priya": { "service": "Retirement Home Housekeeping", "quote": "Our residence has relied on Suyusan for over a year. Their staff is respectful with residents and their documentation is impeccable." }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The page you're looking for doesn't exist or has been moved.",
+    "goHome": "Go home"
+  },
+  "errorPage": {
+    "title": "This page didn't load",
+    "text": "Something went wrong on our end. You can try refreshing or head back home.",
+    "tryAgain": "Try again",
+    "goHome": "Go home"
+  },
+  "theme": {
+    "toLight": "Switch to light mode",
+    "toDark": "Switch to dark mode",
+    "toggle": "Toggle theme"
+  }
+}
