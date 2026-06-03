@@ -1,12 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { Mail, Phone, MapPin, Send, CheckCircle2 } from "lucide-react";
+import { Link } from "@tanstack/react-router";
+import { Mail, Phone, MapPin, Send, CheckCircle2, CalendarCheck } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { FadeIn } from "@/components/FadeIn";
+import { ServiceAreaMap } from "@/components/ServiceAreaMap";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
@@ -35,7 +37,7 @@ type ContactFormData = z.infer<typeof contactSchema>;
 
 function ContactPage() {
   const [sent, setSent] = useState(false);
-  const { register, handleSubmit, formState: { errors }, control, watch, reset } = useForm<ContactFormData>({
+  const { register, handleSubmit, formState: { errors }, control, reset } = useForm<ContactFormData>({
     resolver: zodResolver(contactSchema),
   });
 
@@ -110,18 +112,25 @@ function ContactPage() {
 
               <div>
                 <label className="text-sm font-medium">Service</label>
-                <Select {...register("service")} defaultValue="">
-                  <SelectTrigger className="mt-1.5">
-                    <SelectValue placeholder="Select a service…" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {services.map((s) => (
-                      <SelectItem key={s.slug} value={s.slug}>
-                        {s.title}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
+                <Controller
+                  name="service"
+                  control={control}
+                  defaultValue=""
+                  render={({ field }) => (
+                    <Select value={field.value} onValueChange={field.onChange}>
+                      <SelectTrigger className="mt-1.5">
+                        <SelectValue placeholder="Select a service…" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {services.map((s) => (
+                          <SelectItem key={s.slug} value={s.slug}>
+                            {s.title}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  )}
+                />
                 {errors.service && <p className="mt-1 text-xs text-red-500">{errors.service.message}</p>}
               </div>
 
@@ -145,9 +154,23 @@ function ContactPage() {
         </FadeIn>
 
         <FadeIn variant="fade-right" className="space-y-4">
+          <div className="rounded-3xl border border-primary/30 bg-primary/5 p-6">
+            <div className="h-11 w-11 rounded-xl bg-[var(--gradient-brand)] grid place-items-center"><CalendarCheck className="h-5 w-5 text-primary-foreground" /></div>
+            <div className="mt-4 font-semibold">Prefer to book instantly?</div>
+            <p className="mt-1 text-sm text-muted-foreground">Get a quote and reserve your slot in under 60 seconds.</p>
+            <Link to="/booking" className="mt-4 inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition">
+              Book in 60s
+            </Link>
+          </div>
           <InfoCard icon={Phone} title="Call us" lines={["(416) 555-0123", "Mon–Sat, 8am–7pm"]} />
           <InfoCard icon={Mail} title="Email" lines={["info@suyusansolutions.ca"]} />
           <InfoCard icon={MapPin} title="Service area" lines={["Greater Toronto Area", "& surrounding regions"]} />
+        </FadeIn>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-5 lg:px-8 pb-24">
+        <FadeIn variant="fade-up">
+          <ServiceAreaMap />
         </FadeIn>
       </section>
 

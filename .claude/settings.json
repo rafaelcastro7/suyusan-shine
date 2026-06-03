@@ -16,7 +16,8 @@
       "PowerShell(git add .gitignore)",
       "PowerShell(git commit -m \"chore: add e2e testing artifacts to gitignore\")",
       "PowerShell(git push origin main)",
-      "Bash(npm list *)"
+      "Bash(npm list *)",
+      "PowerShell(Get-Content \"$env:TEMP\\\\suyusan-dev.log\" -Tail 30 | Select-String -Pattern \"error|Error|warn|fail\" -CaseSensitive:$false)"
     ],
     "additionalDirectories": [
       "\\dev",

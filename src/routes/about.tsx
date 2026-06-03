@@ -4,6 +4,7 @@ import { useState } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { FadeIn } from "@/components/FadeIn";
+import { StatCounter } from "@/components/StatCounter";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import team from "@/assets/team.jpg";
 import office from "@/assets/office.jpg";
@@ -45,6 +46,16 @@ function AboutPage() {
           <FadeIn variant="fade-left">
             <img src={team} alt="The Suyusan Solutions team" width={1400} height={1000} loading="lazy" className="rounded-[2rem] shadow-[var(--shadow-soft)] object-cover aspect-[4/3]" />
           </FadeIn>
+        </div>
+      </section>
+
+      {/* Stats band */}
+      <section className="border-b border-border bg-card">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8 py-14 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+          <StatCounter value={500} suffix="+" label="Homes & offices cleaned" />
+          <StatCounter value={4.9} decimals={1} suffix="★" label="Average client rating" />
+          <StatCounter value={16} suffix="+" label="GTA regions served" />
+          <StatCounter value={100} suffix="%" label="Satisfaction guarantee" />
         </div>
       </section>
 

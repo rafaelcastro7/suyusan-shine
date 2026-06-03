@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
-import { X } from "lucide-react";
+import { useState, useEffect, useCallback } from "react";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { FadeIn } from "@/components/FadeIn";
@@ -25,6 +25,25 @@ const galleryImages = Array.from({ length: 15 }, (_, i) => ({
 function GalleryPage() {
   const [selectedId, setSelectedId] = useState<number | null>(null);
   const selectedImage = selectedId ? galleryImages.find(img => img.id === selectedId) : null;
+
+  const goPrev = useCallback(() => {
+    setSelectedId((id) => (id === null ? null : id === 1 ? galleryImages.length : id - 1));
+  }, []);
+  const goNext = useCallback(() => {
+    setSelectedId((id) => (id === null ? null : id === galleryImages.length ? 1 : id + 1));
+  }, []);
+
+  // Keyboard navigation: ← → Esc
+  useEffect(() => {
+    if (selectedId === null) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setSelectedId(null);
+      else if (e.key === "ArrowLeft") goPrev();
+      else if (e.key === "ArrowRight") goNext();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [selectedId, goPrev, goNext]);
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -88,7 +107,28 @@ function GalleryPage() {
               <X className="h-5 w-5 text-white" />
             </button>
 
-            {/* Navigation */}
+            {/* Counter */}
+            <div className="absolute top-4 left-4 rounded-full bg-black/40 px-3 py-1 text-sm font-medium text-white">
+              {`${selectedImage.id} / ${galleryImages.length}`}
+            </div>
+
+            {/* Prev / Next arrows */}
+            <button
+              onClick={goPrev}
+              className="absolute left-2 top-1/2 -translate-y-1/2 h-11 w-11 rounded-full bg-white/20 hover:bg-white/30 grid place-items-center transition"
+              aria-label="Previous image"
+            >
+              <ChevronLeft className="h-6 w-6 text-white" />
+            </button>
+            <button
+              onClick={goNext}
+              className="absolute right-2 top-1/2 -translate-y-1/2 h-11 w-11 rounded-full bg-white/20 hover:bg-white/30 grid place-items-center transition"
+              aria-label="Next image"
+            >
+              <ChevronRight className="h-6 w-6 text-white" />
+            </button>
+
+            {/* Dots */}
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
               {galleryImages.map(img => (
                 <button

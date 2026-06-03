@@ -1,9 +1,9 @@
-import { ReactNode } from 'react'
+import { ReactNode, HTMLAttributes } from 'react'
 import { useIntersection } from '@/hooks/use-intersection'
 
 type FadeInVariant = 'fade-up' | 'fade-left' | 'fade-right' | 'zoom'
 
-interface FadeInProps {
+interface FadeInProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode
   variant?: FadeInVariant
   delay?: number
@@ -24,6 +24,8 @@ export function FadeIn({
   delay = 0,
   duration = 600,
   className = '',
+  style,
+  ...rest
 }: FadeInProps) {
   const [ref, isVisible] = useIntersection({
     threshold: 0.2,
@@ -37,7 +39,9 @@ export function FadeIn({
       style={{
         animationDelay: `${delay}ms`,
         animationDuration: `${duration}ms`,
+        ...style,
       }}
+      {...rest}
     >
       {children}
     </div>
