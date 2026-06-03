@@ -33,7 +33,7 @@ function Home() {
         <div className="gradient-mesh" />
         <div className="mx-auto max-w-7xl px-5 lg:px-8 pt-16 lg:pt-24 pb-20 grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
           <div>
-            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background/70 backdrop-blur px-3 py-1 text-xs font-medium text-foreground/70">
+            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background/70 backdrop-blur px-3 py-1 text-xs font-medium text-foreground/90">
               <span className="h-2 w-2 rounded-full bg-brand-green animate-pulse" /> Now booking across the GTA
             </div>
             <h1 className="mt-6 font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.02] tracking-tight">
@@ -117,7 +117,7 @@ function Home() {
           <BentoCard span="2x2" image="/Galeria/02.jpeg">
             <div className="flex h-full flex-col justify-end">
               <h3 className="font-display text-3xl font-bold">Whole-home deep cleans</h3>
-              <p className="mt-2 max-w-md text-white/85">Top-to-bottom resets that reach everything regular service doesn't.</p>
+              <p className="mt-2 max-w-md text-white">Top-to-bottom resets that reach everything regular service doesn't.</p>
               <Link to="/services" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-white hover:gap-3 transition-all">
                 Explore deep cleaning <ArrowRight className="h-4 w-4" />
               </Link>
@@ -139,7 +139,7 @@ function Home() {
           <BentoCard span="2x1" gradient>
             <div className="flex h-full flex-col justify-center">
               <h3 className="font-display text-2xl font-bold">Not sure what you need?</h3>
-              <p className="mt-1 text-primary-foreground/85">Get a free quote in under a minute.</p>
+              <p className="mt-1 text-primary-foreground">Get a free quote in under a minute.</p>
               <Link to="/booking" className="mt-4 inline-flex w-fit items-center gap-2 rounded-full bg-background px-5 py-2.5 text-sm font-semibold text-foreground hover:opacity-90 transition">
                 Book in 60s <ArrowRight className="h-4 w-4" />
               </Link>
@@ -278,7 +278,7 @@ function Home() {
         <div className="relative overflow-hidden rounded-[2.5rem] bg-[var(--gradient-brand)] p-10 md:p-16 text-primary-foreground">
           <div className="relative z-10 max-w-2xl">
             <h2 className="font-display text-4xl md:text-5xl font-bold">Ready for a cleaner space?</h2>
-            <p className="mt-4 text-primary-foreground/90 text-lg">Book online in under a minute, or tell us about your facility and we'll send a free quote within one business day.</p>
+            <p className="mt-4 text-primary-foreground text-lg">Book online in under a minute, or tell us about your facility and we'll send a free quote within one business day.</p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/booking" className="inline-flex items-center gap-2 rounded-full bg-background text-foreground px-6 py-3 text-sm font-semibold hover:opacity-90 transition">
                 Book in 60s <ArrowRight className="h-4 w-4" />
