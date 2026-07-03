@@ -45,6 +45,20 @@ export const Route = createFileRoute("/services")({
   }),
 });
 
+// Map each service slug to a BookingWizard tier id.
+// Residential → home, Deep → deep, Commercial/specialty → commercial.
+const SERVICE_TIER_MAP: Record<string, string> = {
+  "regular-cleaning": "home",
+  "deep-cleaning": "deep",
+  "post-construction": "deep",
+  "senior-cleaning": "home",
+  "appliances": "home",
+  "staging": "home",
+  "commercial-office": "commercial",
+  "move-in-out": "deep",
+  "retirement-housekeeping": "commercial",
+};
+
 const categoryIds = ["all", "residential", "commercial", "specialty"] as const;
 
 const categoryMap: Record<string, string[]> = {
@@ -118,7 +132,11 @@ function ServicesPage() {
                             <li key={b} className="flex gap-2 text-sm"><CheckCircle2 className="h-5 w-5 text-primary shrink-0" /> {b}</li>
                           ))}
                         </ul>
-                        <Link to="/contact" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3 transition-all">
+                        <Link
+                          to="/booking"
+                          search={{ service: (SERVICE_TIER_MAP[slug] ?? "home") as "home" | "deep" | "commercial" }}
+                          className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3 transition-all"
+                        >
                           {t("services.requestService")} <ArrowRight className="h-4 w-4" />
                         </Link>
                       </div>
@@ -130,7 +148,7 @@ function ServicesPage() {
                           width={800}
                           height={1000}
                           loading="lazy"
-                          className="rounded-2xl border border-border aspect-[4/5] object-cover w-full"
+                          className="rounded-2xl border border-border aspect-[4/5] object-cover object-top w-full"
                         />
                       </div>
                     </div>

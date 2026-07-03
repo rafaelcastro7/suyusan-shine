@@ -1,12 +1,19 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
+import { z } from "zod";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { FadeIn } from "@/components/FadeIn";
 import { BookingWizard } from "@/components/BookingWizard";
 import { useDocumentMeta } from "@/hooks/use-document-meta";
 
+// Validate ?service= so only known tier ids are accepted
+const searchSchema = z.object({
+  service: z.enum(["home", "deep", "commercial"]).optional(),
+});
+
 export const Route = createFileRoute("/booking")({
+  validateSearch: searchSchema,
   component: BookingPage,
   head: () => ({
     meta: [
@@ -25,6 +32,7 @@ export const Route = createFileRoute("/booking")({
 function BookingPage() {
   const { t } = useTranslation();
   useDocumentMeta("meta.booking.title", "meta.booking.description");
+  const { service } = Route.useSearch();
   return (
     <div className="min-h-screen flex flex-col">
       <SiteHeader />
@@ -41,7 +49,7 @@ function BookingPage() {
       </section>
 
       <section className="mx-auto max-w-3xl w-full px-5 lg:px-8 py-16">
-        <BookingWizard />
+        <BookingWizard initialTier={service ?? ""} />
       </section>
 
       <SiteFooter />

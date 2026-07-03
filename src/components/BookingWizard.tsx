@@ -18,10 +18,16 @@ const serviceIcons: Record<string, typeof Sparkles> = {
   commercial: Building2,
 };
 
-export function BookingWizard() {
+interface BookingWizardProps {
+  /** Pre-select a pricing tier id ("home" | "deep" | "commercial") */
+  initialTier?: string;
+}
+
+export function BookingWizard({ initialTier = "" }: BookingWizardProps) {
   const { t } = useTranslation();
-  const [step, setStep] = useState(0);
-  const [tier, setTier] = useState<string>("");
+  // If a tier is pre-selected, skip step 0 straight to step 1
+  const [step, setStep] = useState(initialTier ? 1 : 0);
+  const [tier, setTier] = useState<string>(initialTier);
   const [size, setSize] = useState<string>("");
   const [frequency, setFrequency] = useState<string>("");
   const [date, setDate] = useState<string>("");
@@ -63,7 +69,9 @@ export function BookingWizard() {
       setStep(0);
       return;
     }
-    setStep((s) => Math.max(s - 1, 0));
+    // If arrived via initialTier, don't go back past step 1
+    const floor = initialTier && !isCommercial ? 1 : 0;
+    setStep((s) => Math.max(s - 1, floor));
   };
 
   if (submitted) {
