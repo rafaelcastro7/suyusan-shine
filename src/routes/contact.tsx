@@ -51,8 +51,7 @@ function ContactPage() {
     resolver: zodResolver(contactSchema),
   });
 
-  const onSubmit = async (data: ContactFormData) => {
-    console.log("Form submitted:", data);
+  const onSubmit = async (_data: ContactFormData) => {
     setSent(true);
     setTimeout(() => {
       setSent(false);
